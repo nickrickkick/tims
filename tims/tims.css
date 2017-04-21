@@ -1,25 +1,28 @@
 #canvas_wrap{
        position: absolute;
-    top: 45%;
-    left: 45%;
-    width:200px;
-    height:150px;
+    top: center;
+    left: center;
+    width:1000px;
+    height:650px;
+    background-size: 100%;
     border:1px solid #000;
-    background-image: url("images/MapTIMS.png");
+    background-image: url("images/HomescreenTIMS.png");
+    background-repeat: no-repeat;
+    
     z-index:7;
    
     
 }
 .start {
     position : absolute;
-    top: 47.5%;
-    left: 48%;
+    top: 47.7777%;
+    left: 50%;
     text-align: center;
     vertical-align: middle;
     padding: 20px;
     text-align: center;
-    height: 80px;
-    width: 80px;
+    height: 40px;
+    width: 40px;
     padding: 10px;
     padding-bottom: 20px;
     color: rgba(0,0,0,0);
@@ -32,7 +35,7 @@
 
 .start:hover{
     
-    color: tomato;
+    color: darkred;
     
 }
 body{
@@ -40,4 +43,6 @@ body{
 }
 h1{
  color: crimson;
+    text-align: center;
+    text-emphasis-style: 
 }
