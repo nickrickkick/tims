@@ -1,5 +1,5 @@
 (function() {
-    function player2("images/RedTIMSMap.png", "0, 0", "32px, 32px", 60, [0, 1, 2, 3], dir, false) {
+    function player2(images/RedTIMSMap.png, "0, 0", "32px, 32px", 60, [0, 1, 2, 3], dir, false) {
         this.pos = pos;
         this.size = size;
         this.speed = typeof speed === 'number' ? speed : 0;
