@@ -1,15 +1,25 @@
 #canvas_wrap{
        position: absolute;
+    top: 45%;
+    left: 45%;
     width:200px;
     height:150px;
     border:1px solid #000;
+    background-image: url("images/MapTIMS.png");
     z-index:7;
    
     
 }
 .start {
+    position : absolute;
+    top: 48%;
+    left: 51%;
     text-align: center;
-    border: 0px;
+    vertical-align: middle;
+    padding: 20px;
+    /*top:50px;
+    left: 50%;*/
+    text-align: center;
     height: 80px;
     width: 80px;
     padding: 10px;
@@ -22,8 +32,14 @@
     
         }
 
-.start :hover {
-    opacity: .3;
-    color: rgba(0,0,0,1);
+.start:hover{
     
+    color: tomato;
+    
+}
+body{
+    background-color: gray;
+}
+h1{
+ color: crimson;
 }
