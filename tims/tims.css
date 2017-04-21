@@ -43,19 +43,30 @@ body{
     background-color: gray;
 }
 @keyframes moveTee{
-    0%
+    0% {}
+    50% {position:relative; left 500px;}
+}
+@keyframes moveMe{
+    
+}
+@keyframes moveEm{
+    
+}
+@keyframes moveEs{
+    
 }
 @keyframes fade{
     0% {opacity: 1}
     25% {opacity: 1}
-    50% {opacity: 0}
-    100%{opacity: 0}
+    50% {opacity: 1; display: none; y: 500px}
+    100%{opacity: 1}
     
 }
 h1{
     
  color: crimson; 
     display: inline;
+    
     
     
 }
@@ -82,7 +93,7 @@ h1{
 .mproved{
     width: 125px;
     animation-name: fade;
-    animation-duration: 12s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     
