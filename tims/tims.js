@@ -46,7 +46,7 @@ function gameloop(){
 function spawnplayer(){
     var player2a = new Image;
     player2a.src = player2;
-       context.drawImage(player2a, 12, 10);
+       context.drawImage(player2a, 120, 100);
   
 function init() {
      setInterval(gameLoop,1000);
