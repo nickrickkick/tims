@@ -1,5 +1,5 @@
-(function() {
-    function player2ani(images/RedTIMSMap.png, "0, 0", "32px, 32px", 60, [0, 1, 2, 3], dir, false) {
+player2ani("images/RedTIMSMap.png", "0, 0", "32px, 32px", 60, [0, 1, 2, 3], "horizontal", false)
+function player2ani(image, pos, size, speed, frames, dir, once) {
         this.pos = pos;
         this.size = size;
         this.speed = typeof speed === 'number' ? speed : 0;
@@ -9,6 +9,9 @@
         this.dir = dir || 'horizontal';
         this.once = once;
     };
+
+
+var loadAnimation = function() {
 
     Sprite.prototype = {
         update: function(dt) {
@@ -26,7 +29,7 @@
                 if(this.once && idx >= max) {
                     this.done = true;
                     return;
-                }
+                }loadAnimation
             }
             else {
                 frame = 0;
@@ -52,4 +55,5 @@
     };
 
     window.player2 = Sprite;
-})(); 
+};
+loadAnimation();
