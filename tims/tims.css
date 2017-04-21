@@ -1,0 +1,8 @@
+#canvas_wrap{
+       position: absolute;
+    width:200px;
+    height:150px;
+    border:1px solid #000;
+    z-index:7;
+    
+}
