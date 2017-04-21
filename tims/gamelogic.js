@@ -2,14 +2,14 @@
 
 function gamelogic() {
     
-<<<<<<< HEAD
+
 }
 
 function maplogic(){
     
 }
-=======
-};
+
+
 // key codes w: 87 s: 83 a: 65 d: 68
 function move(event) {
     var k = event.keyCode,
@@ -43,4 +43,4 @@ function move(event) {
 }
 
 document.addEventListener('keydown', move);
->>>>>>> bacd3c1e4a329fbd1e93923363ce51d34428e14d
+
