@@ -33,19 +33,32 @@ function draw(){
  battle = new Image;
  map.src = "battle.png";
  
+
  
 
 }
+function gameloop(){
+    
+    spawnplayer();
+}
+function spawnplayer(){
+    var player2a = new Image;
+    player2a.src = player2ani;
+    
+   player2.push({image:player2a, x: 50, y:100});
+   
 
 function init() {
-     window.addEventListener("keydown", keyPressBlue, false);
+     setInterval(gameLoop,1000);
+  /*   window.addEventListener("keydown", keyPressBlue, false);
      window.addEventListener("keyup", keyReleaseBlue, false);
      window.addEventListener("keydown", keyPressRed, false);
-     window.addEventListener("keyup", keyReleaseRed, false);
+     window.addEventListener("keyup", keyReleaseRed, false); */
    
+}
 }
 
 
-window.addEventListener("load", init, false);
+//window.addEventListener("load", init, false);
 
 
