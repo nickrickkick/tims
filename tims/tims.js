@@ -1,5 +1,6 @@
 // variables that could be usefull
 // fight global
+var game;
 var player1;
 var player2;
 var PlayerHealth = 10;
@@ -50,6 +51,7 @@ function spawnplayer(){
   
 function init() {
      setInterval(gameLoop,1000);
+      context = game.getContext('2d');
   /*   window.addEventListener("keydown", keyPressBlue, false);
      window.addEventListener("keyup", keyReleaseBlue, false);
      window.addEventListener("keydown", keyPressRed, false);
