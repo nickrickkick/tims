@@ -56,7 +56,7 @@ h1{
     width: 195px;
     animation-name: fade;
     animation-duration: 4s;
-    animation-delay: 4s;
+    animation animation-iteration-count: infinite;
     
 }
 .Me{
@@ -66,13 +66,13 @@ h1{
     width: 125px;
     animation-name: fade;
     animation-duration: 4s;
-    animation-delay: 4s;
+    animation animation-iteration-count: infinite;
 }
 .mechanized{
     width: 136px;
     animation-name: fade;
     animation-duration: 4s;
-    animation-delay: 4s;
+    animation animation-iteration-count: infinite;
 }
 .em{
     width: 30px;
@@ -84,6 +84,6 @@ h1{
     width:105px;
     animation-name: fade;
     animation-duration: 4s;
-    animation-delay: 4s;
+    animation animation-iteration-count: infinite;
 }
 
