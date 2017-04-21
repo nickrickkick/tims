@@ -3,3 +3,7 @@
 function gamelogic(){
     
 }
+
+function maplogic(){
+    
+}
