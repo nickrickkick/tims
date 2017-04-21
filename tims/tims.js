@@ -7,6 +7,8 @@ var PlayerMovementSpeeed = 5;
 var PlayerDmg = Math.floor(Math.random() * 6); // damage that player outputs
 var battle_music= document.getElementById("battle_music");
 var battle;
+var main_x = 0, main_y = 0, move_x = 0, move_y = 0;
+var main_x2 = 0, main_y2 = 0, move_x2 = 0, move_y2 = 0;
 //maps global
 var people= 4;
 var map;
