@@ -3,7 +3,7 @@
     left: 18.75%;
     top: center;
     width:1000px;
-    height:650px;
+    height:750px;
     background-size: 100%;
     border:1px solid #000;
     background-image: url("images/HomescreenTIMS.png");
@@ -42,21 +42,38 @@
 body{
     background-color: gray;
 }
+@keyframes moveTee{
+    0%
+}
 @keyframes fade{
-    from{opacity: 1}
-    to{opacity: 0}
+    0% {opacity: 1}
+    25% {opacity: 1}
+    50% {opacity: 0}
+    100%{opacity: 0}
+    
 }
 h1{
+    
  color: crimson; 
+    display: inline;
+    
+    
 }
 .tee{
     width: 22px;
+    top: 10px;
+    text-align: center;
+    padding-left: 25%;
 }
 .echnologically{
     width: 195px;
+    left: 23px;
+    top: 10px;
     animation-name: fade;
-    animation-duration: 4s;
-    animation-delay: 4s;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-align: center;
     
 }
 .Me{
@@ -65,25 +82,32 @@ h1{
 .mproved{
     width: 125px;
     animation-name: fade;
-    animation-duration: 4s;
-    animation-delay: 4s;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-align: center;
 }
 .mechanized{
     width: 136px;
     animation-name: fade;
-    animation-duration: 4s;
-    animation-delay: 4s;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction: alternatetext-align: center;
 }
 .em{
     width: 30px;
+    text-align: center;
 }
 .es{
     width: 18px;
+    text-align: center;
 }
 .amurai{
     width:105px;
     animation-name: fade;
-    animation-duration: 4s;
-    animation-delay: 4s;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-align: center;
 }
 
