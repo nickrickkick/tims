@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Testing "not on git"</title>
+    </head>
+    <body>
+        <h1>Java Script animation!</h1>
+        
+        <div id ="GameContainer" style="width: 400px; height: 400px; position: relative; background; yellow;">
+            <div id = ="AnimationTest" style="width: 50px; height: 50px; position: absolute; background: red;"></div>
+        </div>
+        <script>
+            function mymove() {
+                var elem =
+            document.getElementById("AnimationTest");
+                var pos = 0
+                var id = setInterval(frame, 10);
+                function frame() {
+                    if (pos == 350) {
+                        clearInterval(id);
+                    } else {
+                        pos++;
+                        elem.style.top = pos + 'px';
+                        elem.style.left = pos + 'px';S
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
