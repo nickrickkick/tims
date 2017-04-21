@@ -1,4 +1,4 @@
-(function() {
+  (function() {
     function player2ani(images/RedTIMSMap.png, "0, 0", "32px, 32px", 60, [0, 1, 2, 3], dir, false) {
         this.pos = pos;
         this.size = size;
@@ -53,3 +53,4 @@
 
     window.player2 = Sprite;
 })(); 
+  
