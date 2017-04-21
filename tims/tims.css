@@ -1,7 +1,7 @@
 #canvas_wrap{
        position: absolute;
+    left: 18.75%;
     top: center;
-    left: center;
     width:1000px;
     height:650px;
     background-size: 100%;
@@ -15,14 +15,15 @@
 }
 .start {
     position : absolute;
-    top: 47.7777%;
-    left: 50%;
+    left: 43.75%;
+    top: 38.88%;
+    
     text-align: center;
     vertical-align: middle;
     padding: 20px;
     text-align: center;
-    height: 40px;
-    width: 40px;
+    height: 200px;
+    width: 200px;
     padding: 10px;
     padding-bottom: 20px;
     color: rgba(0,0,0,0);
