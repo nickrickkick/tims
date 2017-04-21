@@ -35,10 +35,8 @@ function maplogic(){
 
 
 // keycodes p1: w: 87 s: 83 a: 65 d: 68
-// keycodes arrows (p2): l: 37 u: 38 r: 39 d: 40
 function move(event) {
     var k = event.keyCode,
-        if (k>50){
         chrId = document.getElementById('player1'),
         chr = {
             updown: function () {
@@ -63,34 +61,7 @@ function move(event) {
                 return x;
             }
         };
-        }
-    else{
-        chrId = document.getElementById('player2'),
-        chr = {
-            updown: function () {
-                var y = parseInt(getComputedStyle(chrId).top);
-                if (k == 40) {
-                    --y;
-                } else if (k == 38) {
-                    ++y;
-                }
-
-                return y;
-            },
-
-            leftright: function () {
-                var x = parseInt(getComputedStyle(chrId).left);
-                if (k == 37) {
-                    --x;
-                } else if (k == 39) {
-                    ++x;
-                }
-
-                return x;
-            }
-        };
-    }
-
+        
     chrId.style.top = (chr.updown()) + "px";
     chrId.style.left = (chr.leftright()) + "px";
 }
