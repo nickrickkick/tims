@@ -4,5 +4,26 @@
     height:150px;
     border:1px solid #000;
     z-index:7;
+   
+    
+}
+.start {
+    text-align: center;
+    border: 0px;
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+    padding-bottom: 20px;
+    color: rgba(0,0,0,0);
+    background-image: url("images/ShieldTIMS.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 10;       
+    
+        }
+
+.start :hover {
+    opacity: .3;
+    color: rgba(0,0,0,1);
     
 }
