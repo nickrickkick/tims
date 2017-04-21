@@ -1,5 +1,5 @@
 player2ani("images/RedTIMSMap.png", "0, 0", "32px, 32px", 60, [0, 1, 2, 3], "horizontal", false)
-function player2ani(image, pos, size, speed, frames, dir, once) {
+function player2ani(image, pos, size, speed, frames, dir, once)
         this.pos = pos;
         this.size = size;
         this.speed = typeof speed === 'number' ? speed : 0;
@@ -55,5 +55,10 @@ var loadAnimation = function() {
     };
 
     window.player2 = Sprite;
+<<<<<<< HEAD
 };
 loadAnimation();
+=======
+})(); 
+  
+>>>>>>> dae81869326bd1ebd9c5e73c2aec7c4d15207763

@@ -37,9 +37,3 @@ function gamelogic() {
 function maplogic(){
     
 }
-
-
-
-
-
-
