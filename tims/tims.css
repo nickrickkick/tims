@@ -65,9 +65,10 @@ body{
     
 }
 @keyframes move{
-    60% {color: darkred;}
+    0%{color: crimson;}
+    60% {color: crimson;}
     61% {position: relative;}
-    62% {top: 200px;}
+    80% {top: 200px;}
 }
 h1{
     
@@ -87,15 +88,10 @@ h1{
     width: 195px;
     left: 23px;
     top: 10px;
-    animation-name: fade;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-name: move;
-    animation-timing-function: linear;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation: move 12s ease infinite alternate;
+    animation: fade 12s ease infinite alternate;
+    
+    
     
     
     
@@ -105,20 +101,14 @@ h1{
 }
 .mproved{
     width: 125px;
-    animation-name: fade;
-    /*remember to FIX this later to 12 seconds again
-    Pretty please remember it Isaac!*/
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation: move 12s ease infinite alternate;
+    animation: fade 12s ease infinite alternate;
     
 }
 .mechanized{
     width: 136px;
-    animation-name: fade;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation: move 12s ease infinite alternate;
+    animation: fade 12s ease infinite alternate;
 }
 .em{
     width: 30px;
@@ -130,10 +120,8 @@ h1{
 }
 .amurai{
     width:105px;
-    animation-name: fade;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation: move 12s ease infinite alternate;
+    animation: fade 12s ease infinite alternate;
     
 }
 
