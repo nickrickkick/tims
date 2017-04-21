@@ -45,7 +45,7 @@ function gameloop(){
 }
 function spawnplayer(){
     var player2a = new Image;
-    player2a.src = player2ani;
+    player2a.src = player2;
        context.drawImage(player2a, 12, 10);
   
 function init() {
