@@ -28,10 +28,23 @@ var player2Health = 10;
 function keyPressBlue(e){
     
      if(e.keyCode == 68){
-         speed = 1.5;
-        move_x = speed;
-        document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoard.gif')";
-     document.getElementsByClassName("blueFight").style.transform = "rotate(-90deg)";
+         
+           var elem = document.getElementById("blueFight");   
+  var pos = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+   //      speed = 1.5;
+     //   move_x = speed;
+       // document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoard.gif')";
+//     document.getElementsByClassName("blueFight").style.transform = "rotate(-90deg)";
      
     }
     if(e.keyCode == 65){
