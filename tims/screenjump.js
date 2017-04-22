@@ -9,6 +9,10 @@ var canvas= document.getElementById("land");
     
     document.getElementById("canvas_wrap").style.backgroundImage = "url('images/MapTIMS.png')";
     this.style.zIndex = "2";
+    document.getElementById("title_music").pause();
+     var sound = document.getElementById("map_music");
+         sound.play();
+         
     }   
     runAnimation();
 }};
