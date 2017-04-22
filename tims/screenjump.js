@@ -1,7 +1,6 @@
 //on shield press, change from homescreen to Map
-
-
-(function() {
+document.onreadystatechange = function() {
+    if (document.readyState === "complete"){
       var press = document.getElementsByClassName("start");
 var canvas= document.getElementById("land");
 //console.log(press);
@@ -9,7 +8,7 @@ var canvas= document.getElementById("land");
     console.log("hello");
     document.getElementById("canvas_wrap").style.backgroundImage = "url('images/MapTIMS.png')";
     }   
-})();
+}};
 
 //on character collision, change from map to battlefield
 
