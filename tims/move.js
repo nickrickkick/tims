@@ -55,33 +55,44 @@ function keyPressRed(e){
        if(e.keyCode == 39){
            speed2 = 1.5;
         move_x2 = speed2;
+        document.getElementsByClassName("redFight").style.backgroundImage = "url('RedBoard.gif')"
+        document.getElementsByClassName("redFight").style.transform = "rotate(90deg)";
     }
     if(e.keyCode == 37){
         speed2 = -1.5;
     move_x2 = speed2;
+        document.getElementsByClassName("redFight").style.backgroundImage = "url('RedBoard.gif')"
+        document.getElementsByClassName("redFight").style.transform = "rotate(-90deg)";
     }
     if(e.keyCode == 40){
         horizontal2 = 1.5;
     move_y2 = horizontal2;
+        document.getElementsByClassName("redFight").style.backgroundImage = "url('RedBoard.gif')"
+        document.getElementsByClassName("redFight").style.transform = "rotate(180deg)";
     }
     if(e.keyCode == 38){
         horizontal2 = -1.5;
     move_y2 = horizontal2;
+        document.getElementsByClassName("redFight").style.backgroundImage = "url('RedBoard.gif')"
     }
   
 }
 function keyReleaseRed(e){
     if(e.keyCode == 39){
         move_x2 = 0;
+        document.getElementsByClassName("redFight").style.backgroundImage = "url('RedBoardSolo.png')"
     }
       if(e.keyCode == 37){
         move_x2 = 0;
+        document.getElementsByClassName("redFight").style.backgroundImage = "url('RedBoardSolo.png')"
     }
       if(e.keyCode == 40){
         move_y2 = 0;
+        document.getElementsByClassName("redFight").style.backgroundImage = "url('RedBoardSolo.png')"
     }
       if(e.keyCode == 38){
         move_y2 = 0;
+        document.getElementsByClassName("redFight").style.backgroundImage = "url('RedBoardSolo.png')"
     }
 }
 
