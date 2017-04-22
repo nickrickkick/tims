@@ -75,7 +75,7 @@ function keyPressBlue(e){
     console.log("hello");
     document.getElementById("blueFight").style.transform = "rotate(360deg)";
     }
-  
+    moveBlue();
 }
 
 function keyReleaseBlue(e){
