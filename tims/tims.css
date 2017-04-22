@@ -46,7 +46,8 @@ li{
 
 #player1{
     position: relative;
-    margin-left: 225px;   
+    margin-left: 225px;  
+    bottom: 235px;
 }
 
 #player2{
@@ -171,4 +172,32 @@ h1{
     animation: fade 8s ease 1.5s infinite alternate;
     
 }*/
+.redPlayer{
+    background-image: url("images/RedMap.gif");
+    height: 120px;
+    width: 120px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 20;
+    position: relative;
+    left: 285px;
+    top: 375px;
+}
+.redFight{
+    background-image: url(images/RedBoardSolo.png)
+}
+.bluePlayer{
+    background-image: url("images/BlueMap.gif");
+    height: 120px;
+    width: 120px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 21;
+    position: relative;
+    left: 1175px;
+    top:125px;
+}
+.redFight{
+    background-image: url(images/BlueBoardSolo.png)
+}
 
