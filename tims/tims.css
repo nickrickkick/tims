@@ -221,7 +221,7 @@ h1{
 #swordBlue{
     height: 85px;
     width: 70px;
-    background-image: url(images/BlueBoard.gif");
+    background-image: url("images/BlueBoard.gif");
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
@@ -231,7 +231,7 @@ h1{
 #swordRed{
     height: 85px;
     width: 70px;
-    background-image: url(images/RedBoard.gif);
+    background-image: url("images/RedBoard.gif");
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
