@@ -38,10 +38,7 @@ var player2Health = 10;
 
 
 function keyPressBlue(e){
-    if(e.keyCode == 32) {
-        document.getElementsById("blueFight").style.visibility = "hidden";
-        document.getElementsById("blueFight").style.zIndex= "1";
-     }
+   
      moveBlue();
 }
 function keyReleaseBlue(e) {
@@ -99,6 +96,10 @@ function keyPressBlue(e){
     }
      if(e.keyCode == 32) {
          document.getElementsByClassName("blueFight").style.backgroundImage = "url('images/BlueBoard.gif')"
+     }
+      if(e.keyCode == 32) {
+        document.getElementById("blueFight").style.visibility = "hidden";
+        document.getElementById("blueFight").style.zIndex= "1";
      }
     moveBlue();
 }
