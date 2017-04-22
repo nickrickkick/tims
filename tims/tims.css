@@ -45,20 +45,11 @@ body{
 
 @keyframes fade{
     0% {opacity: 1;}
-    50% {opacity: 1;}
-    60% {opacity:0;}
-    61%{visibility: hidden;
-    cursor-visbility: visible;}
-    80% {top:200px;}
-    100% {opacity: 0;}
+    50%{opacity: 1;}
+    100% {color: gray;}
     
 }
-@keyframes move{
-    0%{color: crimson;}
-    60% {color: crimson;}
-    61% {position: relative;}
-    80% {top: 200px;}
-}
+
 @keyframes dots{
     0% {opacity: 0;}
     55% {opacity: 0;}
@@ -73,100 +64,73 @@ h1{
     
  color: crimson; 
     display: inline;
+    position:relative;
     }
 
-period {
-    opacity: 0;
-   
-}
 
-.dotT{
-    animation: dots 12s ease infinite alternate;
-     position: fixed;
-    top: 0px;
-}
-
-.dotI{
-    animation: dots 12s ease infinite alternate;
-     position: fixed;
-    top: 0px;
-}
-
-.dotM{
-    animation: dots 12s ease infinite alternate;
-     position: fixed;
-    top: 0px;
-}
-
-.dotS{
-     position: fixed;
-    top: 0px;
-    left: 960px;
-    animation: dots 12s ease infinite alternate;
-    
-    
-    
-}
-
-@keyframes moveLetters{
-    0%
-    50%
-    60%
-    100%
-}
 .tee{
     width: 22px;
-    top: 10px;
+    left: 19%;
     
     display: inline;
-    
-    padding-left: 25%;
 }
 
 .echnologically{
     width: 195px;
-    left: 23px;
-    top: 10px;
+    left: 19.2%;
+    display: inline;
     
-    animation: fade 12s ease infinite alternate;
+
+    animation: fade 8s ease infinite alternate;
 }
 
 
 .Me{
     width: 15px;
+    left: 20%;
     
     display: inline;
 }
 
 .mproved{
     width: 125px;
-    animation: move 12s ease infinite alternate;
-    animation: fade 12s ease infinite alternate;
+    left: 20.2%;
+    display: inline;
+    
+    animation: fade 8s ease 1s infinite alternate;
     
 }
 
 .mechanized{
     width: 136px;
-    animation: move 12s ease infinite alternate;
-    animation: fade 12s ease infinite alternate;
+    left: 21.2%;
+     display: inline;
+    
+    animation: fade 8s ease 1.5s infinite alternate;
 }
 
 @keyframes moveEm{}
 .em{
     width: 30px;
+    left: 21%;
+    display: inline;
     
 }
 
 .es{
     width: 18px;
-    animation: moveLetters 12s ease infinite alternate;
+    left: 22%;
+    display: inline;
+    animation: moveLetters 8s ease infinite alternate;
     
 }
 
 .amurai{
     width:105px;
-    animation: move 12s ease infinite alternate;
-    animation: fade 12s ease infinite alternate;
+    left: 22.2%;
+     display: inline;
+    
+    animation: fade 8s ease 2s infinite alternate;
     
 }
 
