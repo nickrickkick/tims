@@ -134,14 +134,14 @@ function keyPressRed(e){
     if(e.keyCode == 38){
         horizontal2 = -2;
     move_y2 = horizontal2;
-        
+        document.getElementById("redFight").style.transform = "rotate(360deg)";
     }
   
 }
 function keyReleaseRed(e){
     if(e.keyCode == 39){
         speed2 = 0;
-        document.getElementById("redFight").style.backgroundImage = "url('RedBoardSolo.png')"
+        document.getElementById("redFight").style.transform = "rotate(-90deg)";
     }
       if(e.keyCode == 37){
         speed2 = 0;
@@ -149,11 +149,11 @@ function keyReleaseRed(e){
     }
       if(e.keyCode == 40){
         horizontal2 = 0;
-        document.getElementById("redFight").style.backgroundImage = "url('RedBoardSolo.png')"
+        document.getElementById("redFight").style.transform = "rotate(180deg)";
     }
       if(e.keyCode == 38){
         horizontal2 = 0;
-        document.getElementById("redFight").style.backgroundImage = "url('RedBoardSolo.png')"
+        document.getElementById("redFight").style.transform = "rotate(360deg)";
     }
 }
 
