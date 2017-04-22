@@ -157,14 +157,15 @@ function keyReleaseRed(e){
 
 function moveBlue(){
   
-var res = 1175;
+
  
    var str = 600;
       if (move_x !=0){
+          var res = 1175;
       document.getElementById("blueFight").style.left = (move_x + res).toString() + "px";
            
            res -= move_x;
-           return res;
+           
      
       }
          if (move_y !=0){
