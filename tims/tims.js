@@ -40,6 +40,7 @@ var player2Health = 10;
 function keyPressBlue(e){
     if(e.keyCode == 32) {
         document.getElementsById("blueFight").style.visibility = "hidden";
+        document.getElementsById("blueFight").style.zIndex= "1";
      }
      moveBlue();
 }
