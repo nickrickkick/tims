@@ -20,7 +20,15 @@ document.onreadystatechange = function() {
     var but = document.getElementById("battle");
     
     but.item(0).onclick = function(){
-        
+            document.getElementById("canvas_wrap").style.backgroundImage = "url('images/BoardTIMS.png')";
+    this.style.zIndex = "2";
+    document.getElementById("redPlayer").style.zIndex = "1";
+    document.getElementById("bluePlayer").style.zIndex = "1";
+    document.getElementById("blueFight").style.zIndex = "20";
+    document.getElementById("redFight").style.zIndex = "20";
+    document.getElementById("map_music").pause();
+     var sound2 = document.getElementById("battle_music");
+         sound2.play();
     }
     
     
