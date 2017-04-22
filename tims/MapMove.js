@@ -1,4 +1,4 @@
-// key codes w: 87 s: 83 a: 65 d: 68
+/* // key codes w: 87 s: 83 a: 65 d: 68
 function keyPressBlue(e){
 
  if(e.keyCode == 68){
@@ -94,7 +94,35 @@ function moveRed(){
             main_y2 += move_y2;
         }
    
+} */
+
+
+var canvas = document.querySelector('#canvas');
+var context = canvas.getContext('2d');
+
+var xpos = 62.5;
+var ypos = 312.5;
+
+context.drawImage('RedMap.gif',xpos ,ypos);
+context.stroke();
+
+document.onkeydown = move;
+
+function move(e){
+    if(e.keyCode == 39){
+        xpos += 125;
+    }
+    if(e.keyCode == 37){
+        xpos -= 125;
+    }
+    if(e.keyCode == 38){
+        ypos += 125;
+    }
+    if(e.keyCode == 40){
+        ypos -= 125;
+    }
+    canvas.width = canvas.width;
+    context.drawImage('RedMap.gif',xpos ,ypos);
+    context.stroke();
 }
-
-
 
