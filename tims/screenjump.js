@@ -6,7 +6,7 @@ var canvas= document.getElementById("land");
     document.getElementById("canvas_wrap").style.backgroundImage = "url('images/MapTIMS.png')";
     
     
-}
+};
 
 //on character collision, change from map to battlefield
 
