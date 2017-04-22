@@ -41,20 +41,19 @@ li{
     width: 45px;
     background-repeat: no-repeat;
     background-size: 100%;
-    
+    filter: saturate(3);   
 }
 
 #player1{
     position: relative;
-    margin-left: 225px;
+    margin-left: 225px;   
 }
 
 #player2{
     position:absolute;
     right: 0;
     margin-right: 225px;
-    top: 325px;
-    
+    top: 325px;    
 }
 
 .lifeLevel{
@@ -69,8 +68,10 @@ body{
     background-color: gray;
 }
 
-h1{
+.carl{
     background-image: url("images/Name.gif");
+    width: 574px;
+    height: 25px;
 }
 
 /*@keyframes fade{
