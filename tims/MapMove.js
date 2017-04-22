@@ -1,51 +1,25 @@
 // key codes w: 87 s: 83 a: 65 d: 68
 function keyPressBlue(e){
-    
-     if(e.keyCode == 68){
-         speed = 1.5;
-        move_x = speed;
-        document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoard.gif')";
-     
+    // make a script that can move a player in the direction they selected via clicking a button and moves them 125px in that direction
+    if(e.keyCode == 87) {
+    function myMove() {
+        var elem = document.getElementById("myAnimation");
+        var pos = element.getBoundingClientRect();
+        console.log(rect.top, rect.right, rect.bottom, rect.left);
+        var id = setInterval(frame, 10);
+            function frame() {
+            if (pos == pos + 125) {
+                clearInterval(id);
+            } else {
+            pos++; 
+                elem.style.bottom = pos + 'px'; 
+                elem.style.left = pos + '0'; 
+            }
+        }
     }
-    if(e.keyCode == 65){
-        speed = -1.5;
-    move_x = speed;
-    document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoard.gif')";
-   
-    }
-    if(e.keyCode == 83){
-        horizontal = 1.5;
-    move_y = horizontal;
-   document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoard.gif')";
-    
-    }
-    if(e.keyCode == 87){
-        horizontal = -1.5;
-    move_y = horizontal;
-  document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoard.gif')";
-    
-    }
-  
 }
+        
 
-function keyReleaseBlue(e){
-    if(e.keyCode == 68){
-        move_x = 0;
-        document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoardSolo.png')";
-    }
-      if(e.keyCode == 65){
-        move_x = 0;
-        document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoardSolo.png')";
-    }
-      if(e.keyCode == 83){
-        move_y = 0;
-         document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoardSolo.png')";
-    }
-      if(e.keyCode == 87){
-        move_y = 0;
-         document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoardSolo.png')";
-    }
-}
 function keyPressRed(e){
    
        if(e.keyCode == 39){
