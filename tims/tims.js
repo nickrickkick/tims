@@ -43,7 +43,7 @@ function draw(){
  
  }
 
-resources.load([
+/*  resources.load([
     'images/BlueTIMSBoard.png',
     'images/BlueTIMSMap.png',
     'images/BoardTIMS.png',
@@ -60,7 +60,7 @@ resources.load([
 
 resources.onReady(init);
 
-
+*/
 
 function gameloop(){
     
