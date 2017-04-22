@@ -11,8 +11,8 @@ var horizontal2 = 0;
 var PlayerDmg = Math.floor(Math.random() * 6); // damage that player outputs
 var battle_music = document.getElementById("battle_music");
 var battle;
-var main_x = document.getElementById("blueFight").style.left, main_y = document.getElementById("blueFight").style.top, move_x = 0 , move_y = 0;
-var main_x2 =  document.getElementById("redFight").style.left, main_y2 =  document.getElementById("redFight").style.top, move_x2 = 0, move_y2 = 0;
+var main_x = document.getElementById("blueFight"), main_y = document.getElementById("blueFight"), move_x = 0 , move_y = 0;
+var main_x2 =  document.getElementById("redFight"), main_y2 =  document.getElementById("redFight"), move_x2 = 0, move_y2 = 0;
 //maps global
 var people = 4;
 var map;
@@ -39,7 +39,7 @@ function keyPressBlue(e){
           blueplay = document.getElementById("blueFight");
       }
         if (main_x == null){
-          main_x = document.getElementById("blueFight").style.left;
+          main_x = document.getElementById("blueFight");
       }
          speed = 1.5;
         move_x = speed;
@@ -62,7 +62,7 @@ function keyPressBlue(e){
     
     if(e.keyCode == 83){
           if (main_y == null){
-          main_y = document.getElementById("blueFight").style.top;
+          main_y = document.getElementById("blueFight");
       }
         horizontal = 1.5;
     move_y = horizontal;
@@ -105,7 +105,7 @@ function keyPressRed(e){
           redplay = document.getElementById("redFight");
       }
         if (main_x2 == null){
-          main_x2 = document.getElementById("redFight").style.left;
+          main_x2 = document.getElementById("redFight");
       }
            
            speed2 = 1.5;
@@ -121,7 +121,7 @@ function keyPressRed(e){
     }
     if(e.keyCode == 40){
           if (main_y2 == null){
-          main_y2 = document.getElementById("redFight").style.top;
+          main_y2 = document.getElementById("redFight");
       }
         horizontal2 = 1.5;
     move_y2 = horizontal2;
@@ -157,11 +157,11 @@ function keyReleaseRed(e){
 function moveBlue(){
  
       
-         main_x += move_x;
+         main_x.style.left += move_x;
      
       
      
-            main_y += move_y;
+            main_y.style.top += move_y;
         
   
     
@@ -169,9 +169,9 @@ function moveBlue(){
 }
 function moveRed(){
       
-         main_x2 += move_x2;
+         main_x2.style.left += move_x2;
     
-            main_y2 += move_y2;
+            main_y2.style.top += move_y2;
         }
    
 
