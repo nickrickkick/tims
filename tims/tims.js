@@ -1,5 +1,7 @@
 // variables that could be usefull
 // fight global
+var q = 0;
+var f = 0;
 var c = 0;
 var z = 0;
 var game;
@@ -209,10 +211,29 @@ function moveBlue(){
    
 }
 function moveRed(){
-      
-         document.getElementById("redFight").style.left += move_x2 + 1175;
+         q += move_x;
+  var zez = 500;
+  var x = zez + q
+  
+   f += move_y;
+   var sst = 100;
+   var y = sst + f;
+     
+       if(main_x >= 10 && speed > 0){
+            main_x += 0;
+        }
+          else if(main_x <= -9 && speed < 0){
+         main_x += 0;
+     }else{
+         document.getElementById("redFight").style.left += (q).toString() + "px";
     
-            document.getElementById("redFight").style.top += move_y2 + 600;
+     if(main_y >= 10 && horizontal > 0){
+        main_y += 0;
+      }
+      else  if (main_y <= -9 && horizontal < 0){
+        main_y += 0;
+        }else{
+            document.getElementById("redFight").style.top += (f).toString() + "px";
         }
    
 
