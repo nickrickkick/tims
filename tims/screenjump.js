@@ -1,6 +1,6 @@
 //on shield press, change from homescreen to Map
-function StartButtonPress(){
-    map.src = "MapTIMS.png"
+function StartButtonPress() {
+    map.src = "MapTIMS.png";
     
 }
 
