@@ -2,7 +2,7 @@
 document.onreadystatechange = function() {
     if (document.readyState === "complete"){
       var press = document.getElementsByClassName("start");
-
+ var but = document.getElementsByClassName("battle");
 //console.log(press);
     press.item(0).onclick = function() {
     console.log("hello");
@@ -17,8 +17,7 @@ document.onreadystatechange = function() {
          
     } 
     
-    var but = document.getElementById("battle");
-    
+   
     but.item(0).onclick = function(){
             document.getElementById("canvas_wrap").style.backgroundImage = "url('images/BoardTIMS.png')";
     this.style.zIndex = "2";
