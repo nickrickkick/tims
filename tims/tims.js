@@ -217,21 +217,16 @@ function gameloop(){
     frame();
    // spawnplayer();
   //  draw();
-    moveBlue();
-    moveRed();
+ //   moveBlue();
+   // moveRed();
   
 }
 
 
-function spawnplayer(){
-    var Sprite = new Image;
-    Sprite = player2;
-       context.drawImage(sprite, 120, 100);
-  
+
 function init() {
-     setInterval(gameLoop,1000/framerate);
-      context = game.getContext('2d');
-      
+     setInterval(this.gameLoop,1000/framerate);
+    
      window.addEventListener("keydown", keyPressBlue, false);
      window.addEventListener("keyup", keyReleaseBlue, false);
      window.addEventListener("keydown", keyPressRed, false);
@@ -239,7 +234,7 @@ function init() {
    
 }
 
-}
+
 
 
 window.addEventListener("load", this.init, false);
