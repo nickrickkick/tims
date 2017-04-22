@@ -15,7 +15,15 @@ document.onreadystatechange = function() {
      var sound = document.getElementById("map_music");
          sound.play();
          
-    }   
+    } 
+    
+    var but = document.getElementById("battle");
+    
+    but.item(0).onclick = function(){
+        
+    }
+    
+    
  //   runAnimation();
 }};
 
