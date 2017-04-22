@@ -178,7 +178,7 @@ h1{
     width: 120px;
     background-repeat: no-repeat;
     background-size: 100%;
-    z-index: 20;
+    z-index: 1;
     position: relative;
     left: 285px;
     top: 375px;
@@ -192,7 +192,7 @@ h1{
     width: 120px;
     background-repeat: no-repeat;
     background-size: 100%;
-    z-index: 21;
+    z-index: 1;
     position: relative;
     left: 1175px;
     top:125px;
