@@ -1,7 +1,5 @@
-console.log("hello animation -- hello");
-document.onreadystatechange = function() {
-    if (document.readyState === "complete"){
-        console.log("hello animation");
+
+function runAnimation() {
 //Width and height for our canvas
  var canvasWidth = 1000; 
  var canvasHeight = 750;
@@ -51,7 +49,7 @@ document.onreadystatechange = function() {
  var speed = 12; 
  
  //Getting the canvas 
- var canvas = document.getElementById('canvas_wrap');
+ var canvas = document.getElementById('canvas_wrap').getElementsByTagName("land");
  
  //Creating an Image object for our character 
  var character = new Image(); 
@@ -78,4 +76,4 @@ function draw(){
 }
 
 setInterval(draw,100);
-}};
+}
