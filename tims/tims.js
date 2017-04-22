@@ -11,8 +11,8 @@ var horizontal2 = 0;
 var PlayerDmg = Math.floor(Math.random() * 6); // damage that player outputs
 var battle_music = document.getElementById("battle_music");
 var battle;
-var main_x = document.getElementById("blueFight").left, main_y = document.getElementById("blueFight").top, move_x = 0 , move_y = 0;
-var main_x2 =  document.getElementById("redFight").left, main_y2 =  document.getElementById("redFight").top, move_x2 = 0, move_y2 = 0;
+var main_x = document.getElementById("blueFight").style.left, main_y = document.getElementById("blueFight").style.top, move_x = 0 , move_y = 0;
+var main_x2 =  document.getElementById("redFight").style.left, main_y2 =  document.getElementById("redFight").style.top, move_x2 = 0, move_y2 = 0;
 //maps global
 var people = 4;
 var map;
@@ -39,7 +39,7 @@ function keyPressBlue(e){
           blueplay = document.getElementById("blueFight");
       }
         if (main_x == null){
-          main_x = document.getElementById("blueFight").left;
+          main_x = document.getElementById("blueFight").style.left;
       }
          speed = 1.5;
         move_x = speed;
@@ -62,7 +62,7 @@ function keyPressBlue(e){
     
     if(e.keyCode == 83){
           if (main_y == null){
-          main_y = document.getElementById("blueFight").top;
+          main_y = document.getElementById("blueFight").style.top;
       }
         horizontal = 1.5;
     move_y = horizontal;
@@ -105,7 +105,7 @@ function keyPressRed(e){
           redplay = document.getElementById("redFight");
       }
         if (main_x2 == null){
-          main_x2 = document.getElementById("redFight").left;
+          main_x2 = document.getElementById("redFight").style.left;
       }
            
            speed2 = 1.5;
@@ -121,7 +121,7 @@ function keyPressRed(e){
     }
     if(e.keyCode == 40){
           if (main_y2 == null){
-          main_y2 = document.getElementById("redFight").top;
+          main_y2 = document.getElementById("redFight").style.top;
       }
         horizontal2 = 1.5;
     move_y2 = horizontal2;
