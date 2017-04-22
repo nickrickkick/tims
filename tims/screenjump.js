@@ -8,12 +8,13 @@ var canvas= document.getElementById("land");
     console.log("hello");
     
     document.getElementById("canvas_wrap").style.backgroundImage = "url('images/MapTIMS.png')";
-    press.style.zIndex = "2";
+    this.style.zIndex = "2";
     }   
 }};
 
-//on character collision, change from map to battlefield
-
+//on character same space, change from map to battlefield
+var step;
+var c;
 
 //on character defeat, change from battlefield to map
 
