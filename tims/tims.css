@@ -183,7 +183,15 @@ h1{
     top: 415px;
 }
 #redFight{
-    background-image: url(images/RedBoardSolo.png)
+    background-image: url(images/RedBoardSolo.png);
+        width: 80px;
+    height: 80px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 100px;
+    left:500px;
+    
 }
 #bluePlayer{
     background-image: url("images/BlueMap.gif");
@@ -196,7 +204,13 @@ h1{
     left: 1175px;
     top:285px;
 }
-#redFight{
-    background-image: url(images/BlueBoardSolo.png)
+#blueFight{
+    background-image: url(images/BlueBoardSolo.png);
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 200px;
+    left: 800px;
 }
 
