@@ -2,7 +2,7 @@
 document.onreadystatechange = function() {
     if (document.readyState === "complete"){
       var press = document.getElementsByClassName("start");
-var canvas= document.getElementById("land");
+
 //console.log(press);
     press.item(0).onclick = function() {
     console.log("hello");
