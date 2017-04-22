@@ -214,7 +214,7 @@ resources.onReady(init);
 
 */
 function gameloop(){
-    
+    frame();
     spawnplayer();
     draw();
     moveBlue();
