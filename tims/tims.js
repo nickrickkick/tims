@@ -17,14 +17,14 @@ var main_x2 = 0, main_y2 = 0, move_x2 = 0, move_y2 = 0;
 var people = 4;
 var map;
 var movement = 3;
-var blueplay;
-var redplay = document.getElementsByClassName("redplayer");
+var blueplay = document.getElementById("blueFight");
+var redplay = document.getElementById("redFight");
 var framerate = 25;
 var map_music = document.getElementById("map_music");
 var player1Health = 10;
 var player2Health = 10;
 
-
+ 
 function draw(){
        context.save();
      
@@ -75,10 +75,10 @@ function init() {
      setInterval(gameLoop,1000/framerate);
       context = game.getContext('2d');
       
-  /*   window.addEventListener("keydown", keyPressBlue, false);
+     window.addEventListener("keydown", keyPressBlue, false);
      window.addEventListener("keyup", keyReleaseBlue, false);
      window.addEventListener("keydown", keyPressRed, false);
-     window.addEventListener("keyup", keyReleaseRed, false); */
+     window.addEventListener("keyup", keyReleaseRed, false); 
    
 }
 
