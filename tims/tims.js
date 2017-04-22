@@ -11,8 +11,8 @@ var horizontal2 = 0;
 var PlayerDmg = Math.floor(Math.random() * 6); // damage that player outputs
 var battle_music = document.getElementById("battle_music");
 var battle;
-var main_x = 0, main_y = 0, move_x = 0, move_y = 0;
-var main_x2 = 0, main_y2 = 0, move_x2 = 0, move_y2 = 0;
+var main_x = document.getElementById("blueFight").left, main_y = document.getElementById("blueFight").top, move_x = 0 , move_y = 0;
+var main_x2 =  document.getElementById("redFight").left, main_y2 =  document.getElementById("redFight").top, move_x2 = 0, move_y2 = 0;
 //maps global
 var people = 4;
 var map;
@@ -26,24 +26,22 @@ var player2Health = 10;
 
  
        
-  var pos = 0;
  
-   
   
 function keyPressBlue(e){
    
  
-     if(e.keyCode == 68){
+    
            if(e.keyCode == 68){
-      pos++; 
+      
       console.log(blueplay);
       if (blueplay == null){
           blueplay = document.getElementById("blueFight");
       }
-      console.log(document.getElementById("blueFight"));
-      blueplay.style.top = pos + 'px'; 
-      blueplay.style.left = pos + 'px'; 
-       blueplay.style.transform = "rotate(-90deg)";
+        var speed = 1.5;
+        move_x = speed;
+      
+       blueplay.style.transform = "rotate(90deg)";
            }
          
 
@@ -52,24 +50,22 @@ function keyPressBlue(e){
        // document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoard.gif')";
 //     document.getElementsByClassName("blueFight").style.transform = "rotate(-90deg)";
      
-    }
+    
     if(e.keyCode == 65){
         speed = -1.5;
     move_x = speed;
-    document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoard.gif')";
    
     }
     if(e.keyCode == 83){
         horizontal = 1.5;
     move_y = horizontal;
-   document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoard.gif')";
-    document.getElementsByClassName("blueFight").style.transform = "rotate(180deg)";
+   
+    blueplay.style.transform = "rotate(180deg)";
     }
     if(e.keyCode == 87){
         horizontal = -1.5;
     move_y = horizontal;
-  document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoard.gif')";
-    document.getElementsByClassName("blueFight").style.transform = "rotate(90deg)";
+    blueplay.style.transform = "rotate(-90deg)";
     }
   
 }
@@ -77,48 +73,52 @@ function keyPressBlue(e){
 function keyReleaseBlue(e){
     if(e.keyCode == 68){
         move_x = 0;
-        document.getElementById("blueFight").style.backgroundImage = "url('BlueBoardSolo.png')";
-        document.getElementById("blueFight").style.transform = "rotate(-90deg)";
+        document.getElementById("blueFight").style.transform = "rotate(90deg)";
     }
       if(e.keyCode == 65){
         move_x = 0;
-        document.getElementById("blueFight").style.backgroundImage = "url('BlueBoardSolo.png')";
+        
     }
       if(e.keyCode == 83){
         move_y = 0;
-         document.getElementById("blueFight").style.backgroundImage = "url('BlueBoardSolo.png')";
+    
          document.getElementById("blueFight").style.transform = "rotate(180deg)";
     }
       if(e.keyCode == 87){
         move_y = 0;
-         document.getElementById("blueFight").style.backgroundImage = "url('BlueBoardSolo.png')";
-         document.getElementById("blueFight").style.transform = "rotate(90deg)";
+         
+         document.getElementById("blueFight").style.transform = "rotate(-90deg)";
     }
 }
 function keyPressRed(e){
    
        if(e.keyCode == 39){
+           
+              if (redplay == null){
+          redplay = document.getElementById("blueFight");
+      }
+           
            speed2 = 1.5;
         move_x2 = speed2;
-        document.getElementById("redFight").style.backgroundImage = "url('RedBoard.gif')"
-        document.getElementById("redFight").style.transform = "rotate(90deg)";
+        
+        redplay.style.transform = "rotate(-90deg)";
     }
     if(e.keyCode == 37){
         speed2 = -1.5;
     move_x2 = speed2;
-        document.getElementById("redFight").style.backgroundImage = "url('RedBoard.gif')"
-        document.getElementById("redFight").style.transform = "rotate(-90deg)";
+        
+        redplay.style.transform = "rotate(90deg)";
     }
     if(e.keyCode == 40){
         horizontal2 = 1.5;
     move_y2 = horizontal2;
-        document.getElementById("redFight").style.backgroundImage = "url('RedBoard.gif')"
-        document.getElementById("redFight").style.transform = "rotate(180deg)";
+        
+        redplay.style.transform = "rotate(180deg)";
     }
     if(e.keyCode == 38){
         horizontal2 = -1.5;
     move_y2 = horizontal2;
-        document.getElementById("redFight").style.backgroundImage = "url('RedBoard.gif')"
+        
     }
   
 }
@@ -143,47 +143,25 @@ function keyReleaseRed(e){
 
 function moveBlue(){
  
-         if(main_x >= 0 && speed > 0){
-            main_x += 0;
-        }
-          else if(main_x <= 1000 && speed < 0){
-         main_x += 0;
-     }else{
+      
          main_x += move_x;
-     }
-       
-      if(main_y >= 0 && horizontal > 0){
-        main_y += 0;
-      }
-      else  if (main_y <= 750 && horizontal < 0){
-        main_y += 0;
-        }else{
+     
+      
+     
             main_y += move_y;
-        }
+        
   
     
    
 }
 function moveRed(){
-       if(main_x2 >= 0 && speed2 > 0){
-            main_x2 += 0;
-        }
-          else if(main_x2 <= 1000 && speed2 < 0){
-         main_x2 += 0;
-     }else{
+      
          main_x2 += move_x2;
-     }
-       
-      if(main_y2 >= 0 && horizontal2 > 0){
-        main_y2 += 0;
-      }
-      else  if (main_y2 <= 750 && horizontal2 < 0){
-        main_y2 += 0;
-        }else{
+    
             main_y2 += move_y2;
         }
    
-}
+
 
 
 
@@ -222,7 +200,7 @@ function gameloop(){
    // spawnplayer();
   //  draw();
    moveBlue();
-   // moveRed();
+    moveRed();
   
 }
 
