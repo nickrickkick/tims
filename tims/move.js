@@ -18,13 +18,13 @@ function keyPressBlue(e){
         horizontal = 1.5;
     move_y = horizontal;
    document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoard.gif')";
-    
+    document.getElementsByClassName("blueFight").style.transform = "rotate(180deg)";
     }
     if(e.keyCode == 87){
         horizontal = -1.5;
     move_y = horizontal;
   document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoard.gif')";
-    
+    document.getElementsByClassName("blueFight").style.transform = "rotate(90deg)";
     }
   
 }
@@ -33,6 +33,7 @@ function keyReleaseBlue(e){
     if(e.keyCode == 68){
         move_x = 0;
         document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoardSolo.png')";
+        document.getElementsByClassName("blueFight").style.transform = "rotate(-90deg)";
     }
       if(e.keyCode == 65){
         move_x = 0;
@@ -41,10 +42,12 @@ function keyReleaseBlue(e){
       if(e.keyCode == 83){
         move_y = 0;
          document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoardSolo.png')";
+         document.getElementsByClassName("blueFight").style.transform = "rotate(180deg)";
     }
       if(e.keyCode == 87){
         move_y = 0;
          document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoardSolo.png')";
+         document.getElementsByClassName("blueFight").style.transform = "rotate(90deg)";
     }
 }
 function keyPressRed(e){
