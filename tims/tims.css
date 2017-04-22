@@ -72,6 +72,9 @@ body{
     background-image: url("images/Name.gif");
     width: 574px;
     height: 25px;
+    background-repeat: no-repeat;
+    margin-left: 500px;
+    
 }
 
 /*@keyframes fade{
