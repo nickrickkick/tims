@@ -226,7 +226,7 @@ function moveBlue(){
 function moveRed(){
          q += move_x2;
   var zez = 500;
-  var x2 = zez + q
+  var x2 = zez + q;
   
    f += move_y2;
    var sst = 100;
