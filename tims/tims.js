@@ -242,6 +242,6 @@ function init() {
 }
 
 
-window.addEventListener("load", init, false);
+window.addEventListener("load", this.init, false);
 
 
