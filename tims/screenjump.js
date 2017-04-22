@@ -16,9 +16,7 @@ document.onreadystatechange = function() {
     }   
     runAnimation();
 }};
-onclick() {
-    console.warn(clientX + "X," +clientY +"Y");
-}
+
 //on character same space, change from map to battlefield
 var stepX = [-437.5,-312.5,-187.5,-62.5,62.5,187.5,312.5,437.5];
 var stepY = [-312.5,-187.5,-62.5,62.5,187.5,312.5];

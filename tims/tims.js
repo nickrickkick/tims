@@ -7,21 +7,22 @@ var PlayerHealth = 10;
 var speed = 0;
 var horizontal = 0;
 var speed2 = 0;
-var horizontal= 0
+var horizontal = 0;
 var PlayerDmg = Math.floor(Math.random() * 6); // damage that player outputs
-var battle_music= document.getElementById("battle_music");
+var battle_music = document.getElementById("battle_music");
 var battle;
 var main_x = 0, main_y = 0, move_x = 0, move_y = 0;
 var main_x2 = 0, main_y2 = 0, move_x2 = 0, move_y2 = 0;
 //maps global
-var people= 4;
+var people = 4;
 var map;
-var movement= 3;
+var movement = 3;
 var blueplay;
-var redplay= document.getElementsByClassName("redplayer");
-var framerate= 25;
-var map_music= document.getElementById("map_music");
-
+var redplay = document.getElementsByClassName("redplayer");
+var framerate = 25;
+var map_music = document.getElementById("map_music");
+var player1Health = 10;
+var player2Health = 10;
 
 
 function draw(){
