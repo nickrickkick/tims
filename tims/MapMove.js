@@ -1,28 +1,25 @@
 // key codes w: 87 s: 83 a: 65 d: 68
 function keyPressBlue(e){
-    // make a script that can move a player in the direction they selected via clicking a button and moves them 125px in that direction
-    if(e.keyCode == 87) {
-    function myMove() {
-        var elem = document.getElementById("url('BlueBoard.gif'));
-        var pos = element.getBoundingClientRect();
-        console.log(rect.top, rect.right, rect.bottom, rect.left);
-        var id = setInterval(frame, 10);
-            function frame() {
-            if (pos == pos + 125) {
-                clearInterval(id);
-            } else {
-            pos++; 
-                elem.style.bottom = pos + 'px'; 
-                elem.style.left = pos + '0'; 
-            }
-        }
-    }
-}
-        
 
+ if(e.keyCode == 68){
+         speed = 1.5;
+        move_x = speed;
+        document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoard.gif')";
+     document.getElementsByClassName("blueFight").style.transform = "rotate(-90deg)";
+    if(e.keyCode == 83){
+        speed = 1.5;
+        move_x = speed
+        
+    }
+    if(e.keyCode == 65){
+        
+    }
+    if(e.keyCode == 87){
+        
+    }
 function keyPressRed(e){
    
-       if(e.keyCode == 39){
+    if(e.keyCode == 39){
            speed2 = 1.5;
         move_x2 = speed2;
     }
