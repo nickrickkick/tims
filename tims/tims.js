@@ -27,22 +27,44 @@ function draw(){
        context.save();
      
       map = new Image;
-    map.src = "map.png";
+    map.src = "images/MapTIMS.png";
     context.drawImage(map, x, 0);
- context.drawImage(map, map.width + x, 0);
+ //context.drawImage(map, map.width + x, 0);
+ 
+   player1 = new Image;
+     player1.src = "images/BlueTIMSBoard.png";
+     context.drawImage(player1, game.width/2 + main_x, game.height/2 + main_y );
+             
  
  battle = new Image;
- map.src = "battle.png";
+ battle.src = "images/BoardTIMS.png";
  
  
- 
+ }
 
- 
+resources.load([
+    'images/BlueTIMSBoard.png',
+    'images/BlueTIMSMap.png',
+    'images/BoardTIMS.png',
+    'images/BoulderTIMS.png',
+    'images/HeartTIMS.png',
+    'images/HomescreenTIMS.png',
+    'images/MapTIMS.png',
+    'images/RedTIMSMap.png',
+    'images/RedTIMSBoard.png',
+    'images/ShieldTIMS.png',
+    'images/TreeTIMS.png',
+    
+]); 
 
-}
+resources.onReady(init);
+
+
+
 function gameloop(){
     
     spawnplayer();
+    draw();
 }
 function spawnplayer(){
     var player2a = new Image;
