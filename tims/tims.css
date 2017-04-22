@@ -35,6 +35,18 @@
     
         }
 
+li{
+    background-image: url("images/HeartTIMS.png");
+    height:45px;
+    width: 45px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#player1{
+    position: relative;
+    left: 
+}
 .start:hover{
     
     color: darkred;
