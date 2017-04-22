@@ -41,7 +41,7 @@ function keyPressBlue(e){
         if (main_x == null){
           main_x = document.getElementById("blueFight");
       }
-         speed = 1.5;
+         speed = 2;
         move_x = speed;
       
       document.getElementById("blueFight").style.transform = "rotate(90deg)";
@@ -55,7 +55,7 @@ function keyPressBlue(e){
      
     
     if(e.keyCode == 65){
-        speed = -1.5;
+        speed = -2;
     move_x = speed;
     document.getElementById("blueFight").style.transform = "rotate(-90deg)";
     }
@@ -64,13 +64,13 @@ function keyPressBlue(e){
           if (main_y == null){
           main_y = document.getElementById("blueFight");
       }
-        horizontal = 1.5;
+        horizontal = 2;
     move_y = horizontal;
    
     document.getElementById("blueFight").style.transform = "rotate(180deg)";
     }
     if(e.keyCode == 87){
-        horizontal = -1.5;
+        horizontal = -2;
     move_y = horizontal;
     console.log("hello");
     document.getElementById("blueFight").style.transform = "rotate(360deg)";
@@ -80,20 +80,20 @@ function keyPressBlue(e){
 
 function keyReleaseBlue(e){
     if(e.keyCode == 68){
-        move_x = 0;
+        speed = 0;
         document.getElementById("blueFight").style.transform = "rotate(90deg)";
     }
       if(e.keyCode == 65){
-        move_x = 0;
+        speed = 0;
         
     }
       if(e.keyCode == 83){
-        move_y = 0;
+        horizontal = 0;
     
          document.getElementById("blueFight").style.transform = "rotate(180deg)";
     }
       if(e.keyCode == 87){
-        move_y = 0;
+        horizontal = 0;
          
          document.getElementById("blueFight").style.transform = "rotate(360deg)";
     }
@@ -109,13 +109,13 @@ function keyPressRed(e){
           main_x2 = document.getElementById("redFight");
       }
            
-           speed2 = 1.5;
+           speed2 = 2;
         move_x2 = speed2;
         
         document.getElementById("redFight").style.transform = "rotate(-90deg)";
     }
     if(e.keyCode == 37){
-        speed2 = -1.5;
+        speed2 = -2;
     move_x2 = speed2;
         
          document.getElementById("redFight").style.transform = "rotate(90deg)";
@@ -124,13 +124,13 @@ function keyPressRed(e){
           if (main_y2 == null){
           main_y2 = document.getElementById("redFight");
       }
-        horizontal2 = 1.5;
+        horizontal2 = 2;
     move_y2 = horizontal2;
         
          document.getElementById("redFight").style.transform = "rotate(180deg)";
     }
     if(e.keyCode == 38){
-        horizontal2 = -1.5;
+        horizontal2 = -2;
     move_y2 = horizontal2;
         
     }
@@ -138,19 +138,19 @@ function keyPressRed(e){
 }
 function keyReleaseRed(e){
     if(e.keyCode == 39){
-        move_x2 = 0;
+        speed2 = 0;
         document.getElementById("redFight").style.backgroundImage = "url('RedBoardSolo.png')"
     }
       if(e.keyCode == 37){
-        move_x2 = 0;
+        speed2 = 0;
         document.getElementById("redFight").style.transform = "rotate(90deg)";
     }
       if(e.keyCode == 40){
-        move_y2 = 0;
+        horizontal2 = 0;
         document.getElementById("redFight").style.backgroundImage = "url('RedBoardSolo.png')"
     }
       if(e.keyCode == 38){
-        move_y2 = 0;
+        horizontal2 = 0;
         document.getElementById("redFight").style.backgroundImage = "url('RedBoardSolo.png')"
     }
 }
