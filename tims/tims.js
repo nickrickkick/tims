@@ -1,5 +1,7 @@
 // variables that could be usefull
 // fight global
+var q = 0;
+var f = 0;
 var c = 0;
 var z = 0;
 var game;
@@ -120,28 +122,28 @@ function keyPressRed(e){
           main_x2 = document.getElementById("redFight");
       }
            
-           speed2 = 2;
+           speed2 = 10;
         move_x2 = speed2;
         
-        document.getElementById("redFight").style.transform = "rotate(-90deg)";
+        document.getElementById("redFight").style.transform = "rotate(90deg)";
     }
     if(e.keyCode == 37){
-        speed2 = -2;
+        speed2 = -10;
     move_x2 = speed2;
         
-         document.getElementById("redFight").style.transform = "rotate(90deg)";
+         document.getElementById("redFight").style.transform = "rotate(-90deg)";
     }
     if(e.keyCode == 40){
           if (main_y2 == null){
           main_y2 = document.getElementById("redFight");
       }
-        horizontal2 = 2;
+        horizontal2 = 10;
     move_y2 = horizontal2;
         
          document.getElementById("redFight").style.transform = "rotate(180deg)";
     }
     if(e.keyCode == 38){
-        horizontal2 = -2;
+        horizontal2 = -10;
     move_y2 = horizontal2;
         document.getElementById("redFight").style.transform = "rotate(360deg)";
     }
@@ -149,19 +151,19 @@ function keyPressRed(e){
 }
 function keyReleaseRed(e){
     if(e.keyCode == 39){
-        speed2 = 0;
-        document.getElementById("redFight").style.transform = "rotate(-90deg)";
-    }
-      if(e.keyCode == 37){
-        speed2 = 0;
+        move_x2 = 0;
         document.getElementById("redFight").style.transform = "rotate(90deg)";
     }
+      if(e.keyCode == 37){
+        move_x2 = 0;
+        document.getElementById("redFight").style.transform = "rotate(-90deg)";
+    }
       if(e.keyCode == 40){
-        horizontal2 = 0;
+        move_y2 = 0;
         document.getElementById("redFight").style.transform = "rotate(180deg)";
     }
       if(e.keyCode == 38){
-        horizontal2 = 0;
+        move_y2 = 0;
         document.getElementById("redFight").style.transform = "rotate(360deg)";
     }
 }
@@ -208,15 +210,33 @@ function moveBlue(){
    
 }
 function moveRed(){
-      
-         document.getElementById("redFight").style.left += move_x2 + 1175;
+         q += move_x2;
+  var zez = 500;
+  var x2 = zez + q
+  
+   f += move_y2;
+   var sst = 100;
+   var y2 = sst + f;
+     
+       if(main_x2 >= 10 && speed2 > 0){
+            main_x2 += 0;
+        }
+          else if(main_x2 <= -9 && speed2 < 0){
+         main_x2 += 0;
+     }else{
+         document.getElementById("redFight").style.left = (x2).toString() + "px";
     
-            document.getElementById("redFight").style.top += move_y2 + 600;
+     if(main_y2 >= 10 && horizontal2 > 0){
+        main_y2 += 0;
+      }
+      else  if (main_y2 <= -9 && horizontal2 < 0){
+        main_y2 += 0;
+        }else{
+            document.getElementById("redFight").style.top = (y2).toString() + "px";
         }
    
-
-
-
+}
+}
 
  
 function draw(){
