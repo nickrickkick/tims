@@ -23,9 +23,6 @@ var framerate= 25;
 var map_music= document.getElementById("map_music");
 
 
-redplay.style.backgroundImage = "url('RedTIMSMap.png')";
-redplay.style.width = "32px";
-redplay.style.height = "32px";
 
 function draw(){
        context.save();
