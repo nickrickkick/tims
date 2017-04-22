@@ -28,9 +28,21 @@ var map_music = document.getElementById("map_music");
 var player1Health = 10;
 var player2Health = 10;
 
+   c += move_x;
+  var res = 1175;
+  var x = res + c;
  
+   z += move_y;
+   var str = 600;
+   var y = str + z;
        
-
+    q += move_x2;
+  var zez = 500;
+  var x2 = zez + q;
+  
+   f += move_y2;
+   var sst = 100;
+   var y2 = sst + f;
  
 
 
@@ -42,7 +54,7 @@ function keyPressBlue(e){
      moveBlue();
 }
 function keyReleaseBlue(e) {
-    if(e.keyCode == 32) {
+    if(e.keyCode == 66) {
          document.getElementsById("blueFight").style.visibility = "visible";
      }
 }
@@ -99,7 +111,8 @@ function keyPressBlue(e){
      }
       if(e.keyCode == 66) {
         document.getElementById("blueFight").style.visibility = "hidden";
-       // document.getElementById("blueFight").style.zIndex= "1";
+        document.getElementById("swordBlue").style.left = (x).toString() + "px";
+     document.getElementById("swordBlue").style.top = (y).toString() + "px";
      }
     moveBlue();
 }
@@ -188,13 +201,7 @@ function keyReleaseRed(e){
 
 function moveBlue(){
   
-     c += move_x;
-  var res = 1175;
-  var x = res + c;
- 
-   z += move_y;
-   var str = 600;
-   var y = str + z;
+   
      
          
           if(main_x >= 10 && speed > 0){
@@ -228,13 +235,7 @@ function moveBlue(){
    
 }
 function moveRed(){
-         q += move_x2;
-  var zez = 500;
-  var x2 = zez + q;
-  
-   f += move_y2;
-   var sst = 100;
-   var y2 = sst + f;
+     
      
        if(main_x2 >= 10 && speed2 > 0){
             main_x2 += 0;
