@@ -41,11 +41,24 @@ li{
     width: 45px;
     background-repeat: no-repeat;
     background-size: 100%;
+    
 }
 
 #player1{
     position: relative;
-    left: 
+    margin-left: 225px;
+}
+
+#player2{
+    position:absolute;
+    right: 0;
+    margin-right: 225px;
+    top: 325px;
+    
+}
+
+.lifeLevel{
+    margin-bottom: 20px;
 }
 .start:hover{
     
