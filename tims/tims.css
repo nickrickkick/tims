@@ -45,18 +45,9 @@ body{
 
 @keyframes fade{
     0% {opacity: 1;}
-    50%{opacity: 1;}
+    25%{color: crimson;}
+    50%{color:darkred;}
     100% {color: gray;}
-    
-}
-
-@keyframes dots{
-    0% {opacity: 0;}
-    55% {opacity: 0;}
-    65% {opacity:1;}
-    100% {opacity: 1;}
-}
-@keyframes moveDots{
     
 }
 
@@ -70,8 +61,7 @@ h1{
 
 .tee{
     width: 22px;
-    left: 19%;
-    
+    left: 19%;    
     display: inline;
 }
 
