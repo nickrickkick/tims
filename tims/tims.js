@@ -28,19 +28,19 @@ var map_music = document.getElementById("map_music");
 var player1Health = 10;
 var player2Health = 10;
 
-   c += move_x;
+  
   var res = 1175;
   var x = res + c;
  
-   z += move_y;
+   
    var str = 600;
    var y = str + z;
        
-    q += move_x2;
+   
   var zez = 500;
   var x2 = zez + q;
   
-   f += move_y2;
+  
    var sst = 100;
    var y2 = sst + f;
  
@@ -113,6 +113,7 @@ function keyPressBlue(e){
         document.getElementById("blueFight").style.visibility = "hidden";
         document.getElementById("swordBlue").style.left = (x).toString() + "px";
      document.getElementById("swordBlue").style.top = (y).toString() + "px";
+     document.getElementById("swordBlue").style.visibility = "visible";
      }
     moveBlue();
 }
@@ -200,9 +201,9 @@ function keyReleaseRed(e){
 }
 
 function moveBlue(){
-  
+   c += move_x;
    
-     
+     z += move_y;
          
           if(main_x >= 10 && speed > 0){
             main_x += 0;
@@ -235,7 +236,8 @@ function moveBlue(){
    
 }
 function moveRed(){
-     
+      q += move_x2;
+      f += move_y2;
      
        if(main_x2 >= 10 && speed2 > 0){
             main_x2 += 0;
