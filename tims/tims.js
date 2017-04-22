@@ -58,11 +58,7 @@ resources.onReady(init);
 
 */
 
-function gameloop(){
-    
-    spawnplayer();
-    draw();
-}
+
 function spawnplayer(){
     var Sprite = new Image;
     Sprite = player2;
@@ -76,6 +72,12 @@ function init() {
      window.addEventListener("keydown", keyPressRed, false);
      window.addEventListener("keyup", keyReleaseRed, false); */
    
+}
+function gameloop(){
+    
+    spawnplayer();
+    draw();
+    init();
 }
 }
 
