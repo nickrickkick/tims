@@ -11,8 +11,8 @@
     
     z-index:7;
    
-    
 }
+
 .start {
     cursor: pointer;
     position : absolute;
@@ -42,25 +42,13 @@
 body{
     background-color: gray;
 }
-@keyframes moveTee{
-    0% {}
-    50% {left 500px;}
-}
-@keyframes moveMe{
-    
-}
-@keyframes moveEm{
-    
-}
-@keyframes moveEs{
-    50% {right: 20px;}
-    
-}
+
 @keyframes fade{
     0% {opacity: 1;}
     50% {opacity: 1;}
     60% {opacity:0;}
-    61%{visibility: hidden;}
+    61%{visibility: hidden;
+    cursor-visbility: visible;}
     80% {top:200px;}
     100% {opacity: 0;}
     
@@ -89,27 +77,48 @@ h1{
 
 period {
     opacity: 0;
+   
 }
 
 .dotT{
     animation: dots 12s ease infinite alternate;
+     position: fixed;
+    top: 0px;
 }
 
 .dotI{
     animation: dots 12s ease infinite alternate;
+     position: fixed;
+    top: 0px;
 }
 
 .dotM{
     animation: dots 12s ease infinite alternate;
+     position: fixed;
+    top: 0px;
 }
 
 .dotS{
+     position: fixed;
+    top: 0px;
+    left: 960px;
     animation: dots 12s ease infinite alternate;
+    
+    
+    
 }
 
+@keyframes moveLetters{
+    0%
+    50%
+    60%
+    100%
+}
 .tee{
     width: 22px;
     top: 10px;
+    
+    display: inline;
     
     padding-left: 25%;
 }
@@ -122,8 +131,11 @@ period {
     animation: fade 12s ease infinite alternate;
 }
 
+
 .Me{
     width: 15px;
+    
+    display: inline;
 }
 
 .mproved{
@@ -139,6 +151,7 @@ period {
     animation: fade 12s ease infinite alternate;
 }
 
+@keyframes moveEm{}
 .em{
     width: 30px;
     
@@ -146,6 +159,7 @@ period {
 
 .es{
     width: 18px;
+    animation: moveLetters 12s ease infinite alternate;
     
 }
 
