@@ -161,7 +161,7 @@ function moveBlue(){
   var y = document.getElementById("blueFight").style.top = "600px";
    var str = y.substring(0,3);
       if (move_x !=0){
-          document.getElementById("blueFight").style.left += move_x + res + "px";
+          x.style.left += move_x + res + "px";
      
       }
          if (move_y !=0){
