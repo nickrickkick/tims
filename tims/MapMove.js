@@ -3,7 +3,7 @@ function keyPressBlue(e){
     // make a script that can move a player in the direction they selected via clicking a button and moves them 125px in that direction
     if(e.keyCode == 87) {
     function myMove() {
-        var elem = document.getElementById("myAnimation");
+        var elem = document.getElementById("url('BlueBoard.gif'));
         var pos = element.getBoundingClientRect();
         console.log(rect.top, rect.right, rect.bottom, rect.left);
         var id = setInterval(frame, 10);
