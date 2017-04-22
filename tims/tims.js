@@ -27,18 +27,14 @@ var map_music= document.getElementById("map_music");
 function draw(){
        context.save();
      
-      map = new Image;
-    map.src = "images/MapTIMS.png";
-    context.drawImage(map, x, 0);
- //context.drawImage(map, map.width + x, 0);
- 
+   
    player1 = new Image;
      player1.src = "images/BlueTIMSBoard.png";
      context.drawImage(player1, game.width/2 + main_x, game.height/2 + main_y );
              
  
  battle = new Image;
- battle.src = "images/BoardTIMS.png";
+ battle.src = 'url("images/BoardTIMS.png")';
  
  
  }
