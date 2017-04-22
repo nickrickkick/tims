@@ -179,9 +179,9 @@ h1{
     background-repeat: no-repeat;
     background-size: 100%;
     z-index: 1;
-    position: relative;
-    left: 285px;
-    top: 375px;
+    position: absolute;
+    left: 300px;
+    top: 415px;
 }
 .redFight{
     background-image: url(images/RedBoardSolo.png)
@@ -193,9 +193,9 @@ h1{
     background-repeat: no-repeat;
     background-size: 100%;
     z-index: 1;
-    position: relative;
+    position: absolute;
     left: 1175px;
-    top:125px;
+    top:285px;
 }
 .redFight{
     background-image: url(images/BlueBoardSolo.png)
