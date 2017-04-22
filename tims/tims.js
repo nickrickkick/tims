@@ -29,20 +29,13 @@ var player1Health = 10;
 var player2Health = 10;
 
   
-  var res = 1175;
-  var x = res + c;
+ 
  
    
-   var str = 600;
-   var y = str + z;
+  
        
    
-  var zez = 500;
-  var x2 = zez + q;
-  
-  
-   var sst = 100;
-   var y2 = sst + f;
+ 
  
 
 
@@ -202,8 +195,11 @@ function keyReleaseRed(e){
 
 function moveBlue(){
    c += move_x;
-   
      z += move_y;
+      var res = 1175;
+  var x = res + c;
+   var str = 600;
+   var y = str + z;
          
           if(main_x >= 10 && speed > 0){
             main_x += 0;
@@ -238,6 +234,12 @@ function moveBlue(){
 function moveRed(){
       q += move_x2;
       f += move_y2;
+       var zez = 500;
+  var x2 = zez + q;
+  
+  
+   var sst = 100;
+   var y2 = sst + f;
      
        if(main_x2 >= 10 && speed2 > 0){
             main_x2 += 0;
