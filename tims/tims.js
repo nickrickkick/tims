@@ -41,6 +41,7 @@ function keyPressBlue(e){
     if(e.keyCode == 32) {
         document.getElementsById("blueFight").style.visibility = "hidden";
      }
+     moveBlue();
 }
 function keyReleaseBlue(e) {
     if(e.keyCode == 32) {
