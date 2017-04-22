@@ -1,16 +1,19 @@
 #canvas_wrap{
        position: absolute;
     left: 18.75%;
-    top: center;
+    top: 25px;
     width:1000px;
     height:750px;
     background-size: 100%;
-    border:1px solid #000;
    background-image: url("images/HomescreenTIMS.png");  
     background-repeat: no-repeat;
+    padding: 0;
       
     z-index:7;
    
+}
+body{
+    margin-top: 0;
 }
 
 .start {
@@ -53,8 +56,8 @@ li{
 #player2{
     position:absolute;
     right: 0;
-    margin-right: 225px;
-    top: 325px;    
+    margin-right: 245px;
+    top: 315px;    
 }
 
 .lifeLevel{
@@ -75,6 +78,7 @@ body{
     height: 25px;
     background-repeat: no-repeat;
     margin-left: 500px;
+    margin-bottom: 0;
     
 }
 
@@ -180,10 +184,18 @@ h1{
     z-index: 1;
     position: absolute;
     left: 300px;
-    top: 415px;
+    top: 400px;
 }
 #redFight{
-    background-image: url(images/RedBoardSolo.png)
+    background-image: url("images/RedBoardSolo.png");
+        width: 80px;
+    height: 80px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 100px;
+    left:500px;
+    
 }
 #bluePlayer{
     background-image: url("images/BlueMap.gif");
@@ -194,9 +206,16 @@ h1{
     z-index: 1;
     position: absolute;
     left: 1175px;
-    top:285px;
+    top:275px;
 }
-#redFight{
-    background-image: url(images/BlueBoardSolo.png)
+#blueFight{
+    background-image: url("images/BlueBoardSolo.png");
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    left: 500px;
+    top: 300px;
 }
 
