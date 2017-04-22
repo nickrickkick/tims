@@ -183,7 +183,7 @@ h1{
     top: 415px;
 }
 #redFight{
-    background-image: url(images/RedBoardSolo.png);
+    background-image: url("images/RedBoardSolo.png");
         width: 80px;
     height: 80px;
     position: absolute;
@@ -205,12 +205,13 @@ h1{
     top:285px;
 }
 #blueFight{
-    background-image: url(images/BlueBoardSolo.png);
+    background-image: url("images/BlueBoardSolo.png");
     width: 80px;
     height: 80px;
+    position: absolute;
     background-repeat: no-repeat;
     background-size: 100%;
-    top: 200px;
-    left: 800px;
+    left: 500px;
+    top: 300px;
 }
 
