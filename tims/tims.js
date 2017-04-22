@@ -156,14 +156,16 @@ function keyReleaseRed(e){
 }
 
 function moveBlue(){
-  document.getElementById("blueFight").style.left = 1175;
-   document.getElementById("blueFight").style.top = 600;
+  var x = document.getElementById("blueFight").style.left = "1175px";
+  var res = x.substring(0,5);
+  var y = document.getElementById("blueFight").style.top = "600px";
+   var str = y.substring(0,3);
       if (move_x !=0){
-          document.getElementById("blueFight").style.left += move_x;
+          document.getElementById("blueFight").style.left += move_x + res;
      
       }
          if (move_y !=0){
-             document.getElementById("blueFight").style.top += move_y;
+             document.getElementById("blueFight").style.top += move_y + str;
          }
       
      
