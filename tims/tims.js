@@ -126,13 +126,13 @@ function keyPressRed(e){
            speed2 = 2;
         move_x2 = speed2;
         
-        document.getElementById("redFight").style.transform = "rotate(-90deg)";
+        document.getElementById("redFight").style.transform = "rotate(90deg)";
     }
     if(e.keyCode == 37){
         speed2 = -2;
     move_x2 = speed2;
         
-         document.getElementById("redFight").style.transform = "rotate(90deg)";
+         document.getElementById("redFight").style.transform = "rotate(-90deg)";
     }
     if(e.keyCode == 40){
           if (main_y2 == null){
@@ -153,11 +153,11 @@ function keyPressRed(e){
 function keyReleaseRed(e){
     if(e.keyCode == 39){
         speed2 = 0;
-        document.getElementById("redFight").style.transform = "rotate(-90deg)";
+        document.getElementById("redFight").style.transform = "rotate(90deg)";
     }
       if(e.keyCode == 37){
         speed2 = 0;
-        document.getElementById("redFight").style.transform = "rotate(90deg)";
+        document.getElementById("redFight").style.transform = "rotate(-90deg)";
     }
       if(e.keyCode == 40){
         horizontal2 = 0;
@@ -236,9 +236,8 @@ function moveRed(){
             document.getElementById("redFight").style.top += (f).toString() + "px";
         }
    
-
-
-
+}
+}
 
  
 function draw(){
