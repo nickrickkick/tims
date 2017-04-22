@@ -1,7 +1,10 @@
 //on shield press, change from homescreen to Map
 var press = document.getElementsByClassName("start");
+if (press.length > 0) {
+    press = press[0];
+}
 var canvas= document.getElementById("land");
-    press.onclick = function(event) {
+    press.onclick = function() {
     console.log("hello");
     document.getElementById("canvas_wrap").style.backgroundImage = "url('images/MapTIMS.png')";
     
