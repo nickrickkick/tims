@@ -2,7 +2,7 @@
 var press = document.getElementsByClassName("start");
 var canvas= document.getElementById("land");
     press.onclick = function() {
-    document.getElementsByClassName("land").style.backgroundImage = "url('images/MapTIMS.png')";
+    document.getElementById("canvas_wrap").style.backgroundImage = "url('images/MapTIMS.png')";
     
 }
 
