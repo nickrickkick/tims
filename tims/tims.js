@@ -19,6 +19,7 @@ var map;
 var movement= 3;
 var blueplay;
 var redplay;
+var framerate= 25;
 var map_music= document.getElementById("map_music");
 
 
@@ -57,6 +58,12 @@ function draw(){
 resources.onReady(init);
 
 */
+function gameloop(){
+    
+    spawnplayer();
+    draw();
+  
+}
 
 
 function spawnplayer(){
@@ -65,20 +72,16 @@ function spawnplayer(){
        context.drawImage(sprite, 120, 100);
   
 function init() {
-     setInterval(gameLoop,1000);
+     setInterval(gameLoop,1000/framerate);
       context = game.getContext('2d');
+      
   /*   window.addEventListener("keydown", keyPressBlue, false);
      window.addEventListener("keyup", keyReleaseBlue, false);
      window.addEventListener("keydown", keyPressRed, false);
      window.addEventListener("keyup", keyReleaseRed, false); */
    
 }
-function gameloop(){
-    
-    spawnplayer();
-    draw();
-    init();
-}
+
 }
 
 
