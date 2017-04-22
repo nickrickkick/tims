@@ -48,12 +48,12 @@ function runAnimation() {
  //Speed of the movement 
  var speed = 12; 
  
- //Getting the canvas 
- var canvas = document.getElementById('canvas_wrap').getElementsByTagName("land");
+ //Getting the canvas
+ var game = document.getElementById("canvas_wrap");
  
  //Creating an Image object for our character 
  var character = new Image(); 
- 
+ var context = game.getContext('2d');
  //Setting the source to the image file 
  character.src = "images/RedTIMSMap.png";
 
@@ -65,14 +65,12 @@ function updateFrame(){
  srcX = curFrame * width; 
 }
 
-var ctx = canvas.getContext('2d');
-console.log(ctx);
 function draw(){
  //Updating the frame 
  updateFrame();
  //Drawing the image 
- ctx.drawImage(character,srcX,srcY,width,height,x,y,width,height);
- ctx.clearRect(x,y,width,height);
+ context.drawImage(character,srcX,srcY,width,height,x,y,width,height);
+ context.clearRect(x,y,width,height);
 }
 
 setInterval(draw,100);

@@ -23,6 +23,7 @@ var map_music= document.getElementById("map_music");
 
 
 
+
 function draw(){
        context.save();
      
@@ -63,9 +64,9 @@ function gameloop(){
     draw();
 }
 function spawnplayer(){
-    var player2a = new Image;
-    player2a.src = player2;
-       context.drawImage(player2a, 120, 100);
+    var Sprite = new Image;
+    Sprite = player2;
+       context.drawImage(sprite, 120, 100);
   
 function init() {
      setInterval(gameLoop,1000);
