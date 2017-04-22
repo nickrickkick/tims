@@ -1,7 +1,26 @@
 // key codes w: 87 s: 83 a: 65 d: 68
-function keyPressBlue(e){
-    
-     if(e.keyCode == 68){
+//function keyPressBlue(e){
+//    if(e.keyCode == 32) {
+//        var rect = element.getBoundingClientRect();
+//        console.log(rect.top, rect.right, rect.bottom, rect.left);
+//        var imgSrc = document.getElementsByClassName("blueFight"), // or any other selector
+//        x = rect.left, // your data
+//        y = rect.top; // your data
+//        function addimage() { 
+//        var img = document.createElement("Lahio");
+//        img.src = "images/BlueBoard.gif"; 
+//        img.height = 10; 
+//        img.width = 9;
+//        img.style.left = x;
+//        img.style.top = y;
+//        var SwingDeath = document.getElementById("Lahio").id; 
+//        var element = document.getElementById(SwingDeath);
+//        element.parentNode.removeChild(element);
+//        
+//     code not working :(   
+//    }
+//     
+    if(e.keyCode == 68){
          speed = 1.5;
         move_x = speed;
         document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoard.gif')";
@@ -137,8 +156,7 @@ function moveRed(){
         }else{
             main_y2 += move_y2;
         }
-   
-}
+};
 
 
 
