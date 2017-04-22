@@ -62,6 +62,8 @@ function gameloop(){
     
     spawnplayer();
     draw();
+    moveBlue();
+    moveRed();
   
 }
 
