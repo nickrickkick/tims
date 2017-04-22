@@ -1,7 +1,7 @@
 // variables that could be usefull
 // fight global
 var game;
-var canvas = doc.getElementById("land");
+var canvas = document.getElementById("land");
 var player1;
 var player2;
 var PlayerHealth = 10;
