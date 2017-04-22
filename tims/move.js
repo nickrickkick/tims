@@ -32,22 +32,22 @@ function keyPressBlue(e){
 function keyReleaseBlue(e){
     if(e.keyCode == 68){
         move_x = 0;
-        document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoardSolo.png')";
-        document.getElementsByClassName("blueFight").style.transform = "rotate(-90deg)";
+        document.getElementById("blueFight").style.backgroundImage = "url('BlueBoardSolo.png')";
+        document.getElementById("blueFight").style.transform = "rotate(-90deg)";
     }
       if(e.keyCode == 65){
         move_x = 0;
-        document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoardSolo.png')";
+        document.getElementById("blueFight").style.backgroundImage = "url('BlueBoardSolo.png')";
     }
       if(e.keyCode == 83){
         move_y = 0;
-         document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoardSolo.png')";
-         document.getElementsByClassName("blueFight").style.transform = "rotate(180deg)";
+         document.getElementById("blueFight").style.backgroundImage = "url('BlueBoardSolo.png')";
+         document.getElementById("blueFight").style.transform = "rotate(180deg)";
     }
       if(e.keyCode == 87){
         move_y = 0;
-         document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoardSolo.png')";
-         document.getElementsByClassName("blueFight").style.transform = "rotate(90deg)";
+         document.getElementById("blueFight").style.backgroundImage = "url('BlueBoardSolo.png')";
+         document.getElementById("blueFight").style.transform = "rotate(90deg)";
     }
 }
 function keyPressRed(e){
@@ -55,44 +55,44 @@ function keyPressRed(e){
        if(e.keyCode == 39){
            speed2 = 1.5;
         move_x2 = speed2;
-        document.getElementsByClassName("redFight").style.backgroundImage = "url('RedBoard.gif')"
-        document.getElementsByClassName("redFight").style.transform = "rotate(90deg)";
+        document.getElementById("redFight").style.backgroundImage = "url('RedBoard.gif')"
+        document.getElementById("redFight").style.transform = "rotate(90deg)";
     }
     if(e.keyCode == 37){
         speed2 = -1.5;
     move_x2 = speed2;
-        document.getElementsByClassName("redFight").style.backgroundImage = "url('RedBoard.gif')"
-        document.getElementsByClassName("redFight").style.transform = "rotate(-90deg)";
+        document.getElementById("redFight").style.backgroundImage = "url('RedBoard.gif')"
+        document.getElementById("redFight").style.transform = "rotate(-90deg)";
     }
     if(e.keyCode == 40){
         horizontal2 = 1.5;
     move_y2 = horizontal2;
-        document.getElementsByClassName("redFight").style.backgroundImage = "url('RedBoard.gif')"
-        document.getElementsByClassName("redFight").style.transform = "rotate(180deg)";
+        document.getElementById("redFight").style.backgroundImage = "url('RedBoard.gif')"
+        document.getElementById("redFight").style.transform = "rotate(180deg)";
     }
     if(e.keyCode == 38){
         horizontal2 = -1.5;
     move_y2 = horizontal2;
-        document.getElementsByClassName("redFight").style.backgroundImage = "url('RedBoard.gif')"
+        document.getElementById("redFight").style.backgroundImage = "url('RedBoard.gif')"
     }
   
 }
 function keyReleaseRed(e){
     if(e.keyCode == 39){
         move_x2 = 0;
-        document.getElementsByClassName("redFight").style.backgroundImage = "url('RedBoardSolo.png')"
+        document.getElementById("redFight").style.backgroundImage = "url('RedBoardSolo.png')"
     }
       if(e.keyCode == 37){
         move_x2 = 0;
-        document.getElementsByClassName("redFight").style.backgroundImage = "url('RedBoardSolo.png')"
+        document.getElementById("redFight").style.backgroundImage = "url('RedBoardSolo.png')"
     }
       if(e.keyCode == 40){
         move_y2 = 0;
-        document.getElementsByClassName("redFight").style.backgroundImage = "url('RedBoardSolo.png')"
+        document.getElementById("redFight").style.backgroundImage = "url('RedBoardSolo.png')"
     }
       if(e.keyCode == 38){
         move_y2 = 0;
-        document.getElementsByClassName("redFight").style.backgroundImage = "url('RedBoardSolo.png')"
+        document.getElementById("redFight").style.backgroundImage = "url('RedBoardSolo.png')"
     }
 }
 

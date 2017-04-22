@@ -9,14 +9,14 @@ document.onreadystatechange = function() {
     
     document.getElementById("canvas_wrap").style.backgroundImage = "url('images/MapTIMS.png')";
     this.style.zIndex = "2";
-    document.getElementsByClassName("redPlayer").style.zIndex = "20";
-    document.getElementsByClassName("bluePlayer").style.zIndex = "20";
+    document.getElementById("redPlayer").style.zIndex = "20";
+    document.getElementById("bluePlayer").style.zIndex = "20";
     document.getElementById("background_music").pause();
      var sound = document.getElementById("map_music");
          sound.play();
          
     }   
-    runAnimation();
+ //   runAnimation();
 }};
 
 //on character same space, change from map to battlefield
