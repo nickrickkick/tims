@@ -97,9 +97,9 @@ function keyPressBlue(e){
      if(e.keyCode == 32) {
          document.getElementsByClassName("blueFight").style.backgroundImage = "url('images/BlueBoard.gif')"
      }
-      if(e.keyCode == 84) {
+      if(e.keyCode == 66) {
         document.getElementById("blueFight").style.visibility = "hidden";
-        document.getElementById("blueFight").style.zIndex= "1";
+       // document.getElementById("blueFight").style.zIndex= "1";
      }
     moveBlue();
 }
