@@ -1,5 +1,6 @@
 // variables that could be usefull
 // fight global
+var c = 0;
 var game;
 var player1;
 var player2;
@@ -157,14 +158,16 @@ function keyReleaseRed(e){
 
 function moveBlue(){
   
-
+     c += move_x;
+  var res = 1175;
+  var x = res + c;
  
    var str = 600;
       if (move_x !=0){
-          var res = 1175;
-      document.getElementById("blueFight").style.left = (move_x + res).toString() + "px";
+         
+      document.getElementById("blueFight").style.left = (x).toString() + "px";
            
-           res -= move_x;
+            
            
      
       }
