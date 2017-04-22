@@ -161,7 +161,7 @@ function keyPressRed(e){
     move_y2 = horizontal2;
         document.getElementById("redFight").style.transform = "rotate(360deg)";
     }
-  
+   moveRed();
 }
 function keyReleaseRed(e){
     if(e.keyCode == 39){
@@ -180,7 +180,7 @@ function keyReleaseRed(e){
         move_y2 = 0;
         document.getElementById("redFight").style.transform = "rotate(360deg)";
     }
-    moveRed();
+   
 }
 
 function moveBlue(){
