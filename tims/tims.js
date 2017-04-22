@@ -31,6 +31,12 @@ var player2Health = 10;
  
        
 
+ 
+
+
+   
+
+
 function keyPressBlue(e){
     if(e.keyCode == 32) {
         document.getElementsById("blueFight").style.backgroundImage = "url('images/BlueBoard.gif')";
@@ -41,6 +47,7 @@ function keyReleaseBlue(e) {
          document.getElementsById("blueFight").style.backgroundImage = "url('images/BlueBoardSolo.png')";
      }
 }
+
    
 function keyPressBlue(e){
    
@@ -88,6 +95,9 @@ function keyPressBlue(e){
     move_y = horizontal;
     document.getElementById("blueFight").style.transform = "rotate(360deg)";
     }
+     if(e.keyCode == 32) {
+         document.getElementsByClassName("blueFight").style.backgroundImage = "url('images/BlueBoard.gif')"
+     }
     moveBlue();
 }
 
@@ -110,6 +120,10 @@ function keyReleaseBlue(e){
          
          document.getElementById("blueFight").style.transform = "rotate(360deg)";
     }
+     if(e.keyCode == 32) {
+         document.getElementsByClassName("blueFight").style.backgroundImage = "url('images/BlueBoardSolo.png')"
+     }
+ 
 }
 function keyPressRed(e){
    
