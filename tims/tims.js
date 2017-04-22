@@ -157,12 +157,16 @@ function keyReleaseRed(e){
 
 function moveBlue(){
  
-      
-         document.getElementById("blueFight").style.left += move_x;
+      if (move_x !=0){
+          document.getElementById("blueFight").style.left += move_x;
      
+      }
+         if (move_y !=0){
+             document.getElementById("blueFight").style.top += move_y;
+         }
       
      
-            document.getElementById("blueFight").style.top += move_y;
+            
         
   
     
