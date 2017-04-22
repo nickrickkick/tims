@@ -43,9 +43,8 @@ function keyPressBlue(e){
       console.log(document.getElementById("blueFight"));
       blueplay.style.top = pos + 'px'; 
       blueplay.style.left = pos + 'px'; 
-   }else{
-       blueplay.style.left = pos + "px";
-   }
+       blueplay.style.transform = "rotate(-90deg)";
+           }
          
 
    //      speed = 1.5;
