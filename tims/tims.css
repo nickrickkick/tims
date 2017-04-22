@@ -63,6 +63,9 @@ h1{
 .tee{
     width: 22px;
     left: 19%;    
+    font-family: georgia, serif;
+    border: 7px;
+    border-color: black;
     display: inline;
 }
 
@@ -79,7 +82,9 @@ h1{
 .Me{
     width: 15px;
     left: 20%;
-    
+    font-family: georgia, serif;
+    border-color: black;
+    border: 6px;
     display: inline;
 }
 
@@ -88,7 +93,7 @@ h1{
     left: 20.2%;
     display: inline;
     
-    animation: fade 8s ease 1s infinite alternate;
+    animation: fade 8s ease .5s infinite alternate;
     
 }
 
@@ -97,13 +102,15 @@ h1{
     left: 21.2%;
      display: inline;
     
-    animation: fade 8s ease 1.5s infinite alternate;
+    animation: fade 8s ease 1s infinite alternate;
 }
 
-@keyframes moveEm{}
 .em{
     width: 30px;
     left: 21%;
+    font-family: georgia, serif;
+    border: 5px;
+    border-color: black;
     display: inline;
     
 }
@@ -112,6 +119,9 @@ h1{
     width: 18px;
     left: 22%;
     display: inline;
+    font-family: georgia, serif;
+    border: 4px;
+    border-color: black;
     animation: moveLetters 8s ease infinite alternate;
     
 }
@@ -121,7 +131,7 @@ h1{
     left: 22.2%;
      display: inline;
     
-    animation: fade 8s ease 2s infinite alternate;
+    animation: fade 8s ease 1.5s infinite alternate;
     
 }
 
