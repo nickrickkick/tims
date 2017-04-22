@@ -24,23 +24,25 @@ var map_music = document.getElementById("map_music");
 var player1Health = 10;
 var player2Health = 10;
 
-
-function keyPressBlue(e){
-    
-     if(e.keyCode == 68){
-         
-           var elem = document.getElementById("blueFight");   
+  function frame(e) {
+     var elem = document.getElementById("blueFight");   
   var pos = 0;
-  var id = setInterval(frame, 5);
-  function frame() {
-    if (pos == 350) {
-      clearInterval(id);
-    } else {
+   if(e.keyCode == 68){
       pos++; 
       elem.style.top = pos + 'px'; 
       elem.style.left = pos + 'px'; 
-    }
+   }else{
+       elem.style.left = pos + "px";
+   }
+   
   }
+function keyPressBlue(e){
+   
+  var id = setInterval(frame, 5);
+     if(e.keyCode == 68){
+         
+         
+
    //      speed = 1.5;
      //   move_x = speed;
        // document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoard.gif')";
