@@ -211,27 +211,27 @@ function moveBlue(){
    
 }
 function moveRed(){
-         q += move_x;
+         q += move_x2;
   var zez = 500;
   var x = zez + q
   
-   f += move_y;
+   f += move_y2;
    var sst = 100;
    var y = sst + f;
      
-       if(main_x >= 10 && speed > 0){
-            main_x += 0;
+       if(main_x2 >= 10 && speed2 > 0){
+            main_x2 += 0;
         }
-          else if(main_x <= -9 && speed < 0){
-         main_x += 0;
+          else if(main_x2 <= -9 && speed2 < 0){
+         main_x2 += 0;
      }else{
          document.getElementById("redFight").style.left += (q).toString() + "px";
     
-     if(main_y >= 10 && horizontal > 0){
-        main_y += 0;
+     if(main_y2 >= 10 && horizontal2 > 0){
+        main_y2 += 0;
       }
-      else  if (main_y <= -9 && horizontal < 0){
-        main_y += 0;
+      else  if (main_y2 <= -9 && horizontal2 < 0){
+        main_y2 += 0;
         }else{
             document.getElementById("redFight").style.top += (f).toString() + "px";
         }
