@@ -1,4 +1,8 @@
- //Width and height for our canvas
+console.log("hello animation -- hello");
+document.onreadystatechange = function() {
+    if (document.readyState === "complete"){
+        console.log("hello animation");
+//Width and height for our canvas
  var canvasWidth = 1000; 
  var canvasHeight = 750;
  
@@ -53,7 +57,7 @@
  var character = new Image(); 
  
  //Setting the source to the image file 
- character.src = "RedTIMSMap.png";
+ character.src = "images/RedTIMSMap.png";
 
 function updateFrame(){
  //Updating the frame index 
@@ -63,8 +67,8 @@ function updateFrame(){
  srcX = curFrame * width; 
 }
 
-var ctx = document.getElementById('canvas_wrap').getContext('2d');
-
+var ctx = canvas.getContext('2d');
+console.log(ctx);
 function draw(){
  //Updating the frame 
  updateFrame();
@@ -74,3 +78,4 @@ function draw(){
 }
 
 setInterval(draw,100);
+}};
