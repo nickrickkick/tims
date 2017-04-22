@@ -143,7 +143,7 @@ function keyReleaseRed(e){
     }
       if(e.keyCode == 37){
         move_x2 = 0;
-        document.getElementById("redFight").style.backgroundImage = "url('RedBoardSolo.png')"
+        document.getElementById("redFight").style.transform = "rotate(90deg)";
     }
       if(e.keyCode == 40){
         move_y2 = 0;
@@ -158,11 +158,11 @@ function keyReleaseRed(e){
 function moveBlue(){
  
       
-         main_x.style.left += move_x;
+         document.getElementById("blueFight").style.left += move_x;
      
       
      
-            main_y.style.top += move_y;
+            document.getElementById("blueFight").style.top += move_y;
         
   
     
@@ -170,9 +170,9 @@ function moveBlue(){
 }
 function moveRed(){
       
-         main_x2.style.left += move_x2;
+         document.getElementById("redFight").style.left += move_x2;
     
-            main_y2.style.top += move_y2;
+            document.getElementById("redFight").style.top += move_y2;
         }
    
 
