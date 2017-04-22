@@ -1,5 +1,5 @@
 //on shield press, change from homescreen to Map
-var press = document.getElementsByClassName("start")[0];
+var press = document.getElementsByClassName("start").item(0);
 var canvas= document.getElementById("land");
     press.onclick = function() {
     console.log("hello");
