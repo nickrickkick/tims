@@ -73,7 +73,7 @@ function keyPressBlue(e){
         horizontal = -1.5;
     move_y = horizontal;
     console.log("hello");
-    document.getElementById("blueFight").transform = "rotate(360deg)";
+    document.getElementById("blueFight").style.transform = "rotate(360deg)";
     }
   
 }
