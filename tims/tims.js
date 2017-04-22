@@ -161,13 +161,16 @@ var res = 1175;
  
    var str = 600;
       if (move_x !=0){
-         document.getElementById("blueFight").style.left += (move_x + res).toString() + "px";
+    var x =  document.getElementById("blueFight").style.left += (move_x + res).toString() + "px";
            
-           
+           res = x;
+           return res;
      
       }
          if (move_y !=0){
-             document.getElementById("blueFight").style.top += (move_y + str).toString() + "px";
+           var y =   document.getElementById("blueFight").style.top += (move_y + str).toString() + "px";
+             str = y;
+             return str;
          }
       
      
