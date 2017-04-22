@@ -72,7 +72,7 @@ function keyPressBlue(e){
     if(e.keyCode == 87){
         horizontal = -1.5;
     move_y = horizontal;
-    document.getElementById("blueFight").transform = "rotate(90deg)";
+    document.getElementById("blueFight").transform = "rotate(360deg)";
     }
   
 }
