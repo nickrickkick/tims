@@ -174,9 +174,9 @@ function moveBlue(){
 }
 function moveRed(){
       
-         document.getElementById("redFight").style.left += move_x2;
+         document.getElementById("redFight").style.left += move_x2 + 1175;
     
-            document.getElementById("redFight").style.top += move_y2;
+            document.getElementById("redFight").style.top += move_y2 + 600;
         }
    
 
