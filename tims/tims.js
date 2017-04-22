@@ -36,6 +36,8 @@ function keyPressBlue(e){
      if(e.keyCode == 68){
            if(e.keyCode == 68){
       pos++; 
+      console.log(blueplay);
+      console.log(document.getElementById("blueFight"));
       blueplay.style.top = pos + 'px'; 
       blueplay.style.left = pos + 'px'; 
    }else{
