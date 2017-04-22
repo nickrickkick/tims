@@ -184,7 +184,7 @@ h1{
     z-index: 1;
     position: absolute;
     left: 300px;
-    top: 415px;
+    top: 400px;
 }
 #redFight{
     background-image: url("images/RedBoardSolo.png");
@@ -206,7 +206,7 @@ h1{
     z-index: 1;
     position: absolute;
     left: 1175px;
-    top:285px;
+    top:275px;
 }
 #blueFight{
     background-image: url("images/BlueBoardSolo.png");
