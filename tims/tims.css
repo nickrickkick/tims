@@ -30,6 +30,7 @@
     background-image: url("images/ShieldTIMS.png");
     background-repeat: no-repeat;
     background-size: 100%;
+    border-radius: 100px;
     z-index: 10;       
     
         }
