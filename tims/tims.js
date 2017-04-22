@@ -156,13 +156,13 @@ function keyReleaseRed(e){
 }
 
 function moveBlue(){
- 
+ // document.getElementById("blueFight").style.left
       if (move_x !=0){
-          document.getElementById("blueFight").style.left += move_x;
+          document.getElementById("blueFight").style.left += move_x + 1175;
      
       }
          if (move_y !=0){
-             document.getElementById("blueFight").style.top += move_y;
+             document.getElementById("blueFight").style.top += move_y + 600;
          }
       
      
