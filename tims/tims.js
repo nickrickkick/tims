@@ -82,20 +82,20 @@ function keyPressBlue(e){
 
 function keyReleaseBlue(e){
     if(e.keyCode == 68){
-        speed = 0;
+        move_x = 0;
         document.getElementById("blueFight").style.transform = "rotate(90deg)";
     }
       if(e.keyCode == 65){
-        speed = 0;
+        move_x = 0;
         
     }
       if(e.keyCode == 83){
-        horizontal = 0;
+        move_y = 0;
     
          document.getElementById("blueFight").style.transform = "rotate(180deg)";
     }
       if(e.keyCode == 87){
-        horizontal = 0;
+        move_y = 0;
          
          document.getElementById("blueFight").style.transform = "rotate(360deg)";
     }
