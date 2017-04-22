@@ -45,9 +45,9 @@ li{
 }
 
 #player1{
-    position: relative;
+    position: absolute;
     margin-left: 225px;  
-    bottom: 235px;
+    bottom: 285px;
 }
 
 #player2{
