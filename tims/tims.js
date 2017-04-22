@@ -44,7 +44,7 @@ function keyPressBlue(e){
          speed = 1.5;
         move_x = speed;
       
-       blueplay.style.transform = "rotate(90deg)";
+      document.getElementById("blueFight").style.transform = "rotate(90deg)";
            }
          
 
@@ -67,12 +67,12 @@ function keyPressBlue(e){
         horizontal = 1.5;
     move_y = horizontal;
    
-    blueplay.style.transform = "rotate(180deg)";
+    document.getElementById("blueFight").style.transform = "rotate(180deg)";
     }
     if(e.keyCode == 87){
         horizontal = -1.5;
     move_y = horizontal;
-    blueplay.style.transform = "rotate(-90deg)";
+    document.getElementById("blueFight").transform = "rotate(-90deg)";
     }
   
 }
@@ -111,13 +111,13 @@ function keyPressRed(e){
            speed2 = 1.5;
         move_x2 = speed2;
         
-        redplay.style.transform = "rotate(-90deg)";
+        document.getElementById("redFight").style.transform = "rotate(-90deg)";
     }
     if(e.keyCode == 37){
         speed2 = -1.5;
     move_x2 = speed2;
         
-        redplay.style.transform = "rotate(90deg)";
+         document.getElementById("redFight").style.transform = "rotate(90deg)";
     }
     if(e.keyCode == 40){
           if (main_y2 == null){
@@ -126,7 +126,7 @@ function keyPressRed(e){
         horizontal2 = 1.5;
     move_y2 = horizontal2;
         
-        redplay.style.transform = "rotate(180deg)";
+         document.getElementById("redFight").style.transform = "rotate(180deg)";
     }
     if(e.keyCode == 38){
         horizontal2 = -1.5;
