@@ -67,6 +67,7 @@ h1{
     border: 7px;
     border-color: black;
     display: inline;
+    padding-left: 30px;
 }
 
 .echnologically{
@@ -85,6 +86,7 @@ h1{
     font-family: georgia, serif;
     border-color: black;
     border: 6px;
+    padding-left: 30px;
     display: inline;
 }
 
@@ -112,6 +114,7 @@ h1{
     border: 5px;
     border-color: black;
     display: inline;
+    padding-left: 30px;
     
 }
 
@@ -122,6 +125,7 @@ h1{
     font-family: georgia, serif;
     border: 4px;
     border-color: black;
+    padding-left: 30px;
     animation: moveLetters 8s ease infinite alternate;
     
 }
