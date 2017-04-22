@@ -171,17 +171,13 @@ function moveRed(){
  
 function draw(){
        context.save();
-     
-   
-   player1 = new Image;
-     player1.src = "images/BlueTIMSBoard.png";
-     context.drawImage(player1, game.width/2 + main_x, game.height/2 + main_y );
-             
- 
- battle = new Image;
- battle.src = 'url("images/BoardTIMS.png")';
- 
- 
+      context.clearRect(0,0,game.width,game.height);
+      
+     context.drawImage(blueplay, game.width/2 + main_x, game.height/2 + main_y );
+       context.drawImage(redplay, game.width/2 + main_x, game.height/2 + main_y );
+       
+          context.restore();
+  
  }
 
 /*  resources.load([
