@@ -171,7 +171,7 @@ function moveBlue(){
           if(main_x >= 80 && speed > 0){
             main_x += 0;
         }
-          else if(main_x <= -80 && speed < 0){
+          else if(main_x <= 0 && speed < 0){
          main_x += 0;
      }else{
       document.getElementById("blueFight").style.left = (x).toString() + "px";
@@ -183,7 +183,7 @@ function moveBlue(){
          if(main_y >= 80 && horizontal > 0){
         main_y += 0;
       }
-      else  if (main_y <= -80 && horizontal < 0){
+      else  if (main_y <= 0 && horizontal < 0){
         main_y += 0;
         }else{
         
