@@ -30,10 +30,24 @@ var player2Health = 10;
 
  
        
+
  
 
 
    
+
+
+function keyPressBlue(e){
+    if(e.keyCode == 32) {
+        document.getElementsById("blueFight").style.backgroundImage = "url('images/BlueBoard.gif')"
+     }
+}
+function keyReleaseBlue(e) {
+    if(e.keyCode == 32) {
+         document.getElementsById("blueFight").style.backgroundImage = "url('images/BlueBoardSolo.png')"
+     }
+}
+
    
 function keyPressBlue(e){
    
@@ -79,7 +93,6 @@ function keyPressBlue(e){
     if(e.keyCode == 87){
         horizontal = -10;
     move_y = horizontal;
-    console.log("hello");
     document.getElementById("blueFight").style.transform = "rotate(360deg)";
     }
      if(e.keyCode == 32) {
