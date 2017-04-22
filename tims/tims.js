@@ -215,8 +215,8 @@ resources.onReady(init);
 */
 function gameloop(){
     frame();
-    spawnplayer();
-    draw();
+   // spawnplayer();
+  //  draw();
     moveBlue();
     moveRed();
   
@@ -242,6 +242,6 @@ function init() {
 }
 
 
-//window.addEventListener("load", init, false);
+window.addEventListener("load", this.init, false);
 
 
