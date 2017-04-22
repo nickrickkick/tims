@@ -1,4 +1,4 @@
-Sprite("images/RedTIMSMap.png", "0, 0", "32px, 32px", 60, [0, 1, 2, 3], "horizontal", false)
+Sprite("images/RedTIMSMap.png", "0, 0", "32px, 32px", "60", [0, 1, 2, 3], "horizontal", false)
 function Sprite(url, pos, size, speed, frames, dir, once) {
         this.pos = pos;
         this.size = size;
@@ -29,7 +29,7 @@ var loadAnimation = function() {
                 if(this.once && idx >= max) {
                     this.done = true;
                     return;
-                }loadAnimation
+                }
             }
             else {
                 frame = 0;
@@ -47,7 +47,7 @@ var loadAnimation = function() {
             }
 
             ctx.drawImage(resources.get(this.url),
-                          x, y,
+                          0, 0,
                           this.size[0], this.size[1],
                           0, 0,
                           this.size[0], this.size[1]);
