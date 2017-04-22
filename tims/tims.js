@@ -1,6 +1,7 @@
 // variables that could be usefull
 // fight global
 var c = 0;
+var z = 0;
 var game;
 var player1;
 var player2;
@@ -162,7 +163,9 @@ function moveBlue(){
   var res = 1175;
   var x = res + c;
  
+   z += move_y;
    var str = 600;
+   var y = str + z;
       if (move_x !=0){
          
       document.getElementById("blueFight").style.left = (x).toString() + "px";
@@ -172,9 +175,8 @@ function moveBlue(){
      
       }
          if (move_y !=0){
-             document.getElementById("blueFight").style.top = (move_y + str).toString() + "px";
-             str -= move_y;
-             return str;
+             document.getElementById("blueFight").style.top = (y).toString() + "px";
+             
          }
       
      
