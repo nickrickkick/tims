@@ -300,7 +300,7 @@ function gameloop(){
 
 
 function init() {
-    
+     var but = document.getElementsByClassName("battle");
      game = document.getElementById("land");
      if (game && game.getContext) {
     context = game.getContext('2d');
@@ -312,9 +312,13 @@ function init() {
      window.addEventListener("keydown", keyPressRed, false);
      window.addEventListener("keyup", keyReleaseRed, false); 
      }
+     
+     but.onclick = function(){
+         little = true;
+     }
 }
 
-
+  
 
 
 window.addEventListener("load", this.init, false);
