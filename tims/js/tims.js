@@ -4,7 +4,7 @@ var q = 0;
 var f = 0;
 var c = 0;
 var z = 0;
-var little = false;
+var little = !little;
 var game; //canvas
 var battle; //background
 var map; // background
