@@ -284,8 +284,11 @@ resources.onReady(init);
 function gameloop(){
     
   //  draw();
-  if(little === true){
-       moveBlue();
+  if(little === !little){
+       
+       
+  }else{
+      moveBlue();
     moveRed();
   }
   
