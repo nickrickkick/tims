@@ -45,20 +45,17 @@ var player2Health = 10;
    
 
 
-function keyPressBlue(e){
-   
-     moveBlue();
-}
+
 function keyReleaseBlue(e) {
     if(e.keyCode == 66) {
-         document.getElementsById("blueFight").style.visibility = "visible";
+         document.getElementById("blueFight").style.visibility = "visible";
      }
 }
 
    
 function keyPressBlue(e){
    
- 
+    if(little === true){
     
            if(e.keyCode == 68){
       
@@ -105,9 +102,11 @@ function keyPressBlue(e){
      document.getElementById("swordBlue").style.visibility = "visible";
      }
     moveBlue();
+    }
 }
 
 function keyReleaseBlue(e){
+    
     if(e.keyCode == 68){
         move_x = 0;
       //  document.getElementById("blueFight").style.transform = "rotate(90deg)";
@@ -132,7 +131,7 @@ function keyReleaseBlue(e){
  
 }
 function keyPressRed(e){
-   
+   if(little === true){
        if(e.keyCode == 39){
            
               if (redplay == null){
@@ -168,6 +167,7 @@ function keyPressRed(e){
         document.getElementById("redFight").style.transform = "rotate(360deg)";
     }
    moveRed();
+   }
 }
 function keyReleaseRed(e){
     if(e.keyCode == 39){
@@ -287,7 +287,8 @@ function gameloop(){
   if(little === false){
        
        
-  }else{
+  }
+  else if(little ===true){
       moveBlue();
     moveRed();
   }
