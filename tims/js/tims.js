@@ -284,7 +284,7 @@ resources.onReady(init);
 function gameloop(){
     
   //  draw();
-  if(little === !little){
+  if(little === false){
        
        
   }else{
