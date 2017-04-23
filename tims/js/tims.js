@@ -4,7 +4,7 @@ var q = 0;
 var f = 0;
 var c = 0;
 var z = 0;
-var little = !little;
+var little = false;
 var game; //canvas
 var battle; //background
 var map; // background
@@ -47,6 +47,7 @@ var player2Health = 10;
 
 
 function keyReleaseBlue(e) {
+    
     if(e.keyCode == 66) {
          document.getElementById("blueFight").style.visibility = "visible";
      }
