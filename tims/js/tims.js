@@ -95,7 +95,7 @@ function keyPressBlue(e){
     move_y = horizontal;
     document.getElementById("blueFight").style.transform = "rotate(360deg)";
     }
-     if(e.keyCode == 66) {
+     if(e.keyCode == 32) {
          document.getElementsByClassName("blueFight").style.backgroundImage = "url('images/BlueBoard.gif')";
      }
       if(e.keyCode == 66) {
