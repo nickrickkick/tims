@@ -66,7 +66,7 @@ function keyPressBlue(e){
         if (main_x == null){
           main_x = document.getElementById("blueFight");
       }
-         speed = 10;
+         speed = 1.5;
         move_x = speed;
       
       document.getElementById("blueFight").style.transform = "rotate(90deg)";
@@ -80,7 +80,7 @@ function keyPressBlue(e){
      
     
     if(e.keyCode == 65){
-        speed = -10;
+        speed = -1.5;
     move_x = speed;
     document.getElementById("blueFight").style.transform = "rotate(-90deg)";
     }
@@ -89,18 +89,18 @@ function keyPressBlue(e){
           if (main_y == null){
           main_y = document.getElementById("blueFight");
       }
-        horizontal = 10;
+        horizontal = 1.5;
     move_y = horizontal;
    
     document.getElementById("blueFight").style.transform = "rotate(180deg)";
     }
     if(e.keyCode == 87){
-        horizontal = -10;
+        horizontal = -1.5;
     move_y = horizontal;
     document.getElementById("blueFight").style.transform = "rotate(360deg)";
     }
-     if(e.keyCode == 32) {
-         document.getElementsByClassName("blueFight").style.backgroundImage = "url('images/BlueBoard.gif')"
+     if(e.keyCode == 66) {
+         document.getElementsByClassName("blueFight").style.backgroundImage = "url('images/BlueBoard.gif')";
      }
       if(e.keyCode == 66) {
         document.getElementById("blueFight").style.visibility = "hidden";
@@ -114,7 +114,7 @@ function keyPressBlue(e){
 function keyReleaseBlue(e){
     if(e.keyCode == 68){
         move_x = 0;
-        document.getElementById("blueFight").style.transform = "rotate(90deg)";
+      //  document.getElementById("blueFight").style.transform = "rotate(90deg)";
     }
       if(e.keyCode == 65){
         move_x = 0;
@@ -123,15 +123,15 @@ function keyReleaseBlue(e){
       if(e.keyCode == 83){
         move_y = 0;
     
-         document.getElementById("blueFight").style.transform = "rotate(180deg)";
+       //  document.getElementById("blueFight").style.transform = "rotate(180deg)";
     }
       if(e.keyCode == 87){
         move_y = 0;
          
-         document.getElementById("blueFight").style.transform = "rotate(360deg)";
+        // document.getElementById("blueFight").style.transform = "rotate(360deg)";
     }
      if(e.keyCode == 32) {
-         document.getElementsByClassName("blueFight").style.backgroundImage = "url('images/BlueBoardSolo.png')"
+       //  document.getElementsByClassName("blueFight").style.backgroundImage = "url('images/BlueBoardSolo.png')"
      }
  
 }
@@ -146,13 +146,13 @@ function keyPressRed(e){
           main_x2 = document.getElementById("redFight");
       }
            
-           speed2 = 10;
+           speed2 = 1.5;
         move_x2 = speed2;
         
         document.getElementById("redFight").style.transform = "rotate(90deg)";
     }
     if(e.keyCode == 37){
-        speed2 = -10;
+        speed2 = -1.5;
     move_x2 = speed2;
         
          document.getElementById("redFight").style.transform = "rotate(-90deg)";
@@ -161,13 +161,13 @@ function keyPressRed(e){
           if (main_y2 == null){
           main_y2 = document.getElementById("redFight");
       }
-        horizontal2 = 10;
+        horizontal2 = 1.5;
     move_y2 = horizontal2;
         
          document.getElementById("redFight").style.transform = "rotate(180deg)";
     }
     if(e.keyCode == 38){
-        horizontal2 = -10;
+        horizontal2 = -1.5;
     move_y2 = horizontal2;
         document.getElementById("redFight").style.transform = "rotate(360deg)";
     }
@@ -176,19 +176,19 @@ function keyPressRed(e){
 function keyReleaseRed(e){
     if(e.keyCode == 39){
         move_x2 = 0;
-        document.getElementById("redFight").style.transform = "rotate(90deg)";
+      //  document.getElementById("redFight").style.transform = "rotate(90deg)";
     }
       if(e.keyCode == 37){
         move_x2 = 0;
-        document.getElementById("redFight").style.transform = "rotate(-90deg)";
+     //   document.getElementById("redFight").style.transform = "rotate(-90deg)";
     }
       if(e.keyCode == 40){
         move_y2 = 0;
-        document.getElementById("redFight").style.transform = "rotate(180deg)";
+      //  document.getElementById("redFight").style.transform = "rotate(180deg)";
     }
       if(e.keyCode == 38){
         move_y2 = 0;
-        document.getElementById("redFight").style.transform = "rotate(360deg)";
+      //  document.getElementById("redFight").style.transform = "rotate(360deg)";
     }
    
 }
@@ -303,7 +303,7 @@ function gameloop(){
 
 
 function init() {
-     setInterval(this.gameLoop,1000/framerate);
+     setInterval(this.gameLoop,1000/100);
     
      window.addEventListener("keydown", keyPressBlue, false);
      window.addEventListener("keyup", keyReleaseBlue, false);
