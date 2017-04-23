@@ -4,7 +4,11 @@ var q = 0;
 var f = 0;
 var c = 0;
 var z = 0;
-var game;
+var little = false;
+var game; //canvas
+var battle; //background
+var map; // background
+var context;
 var player1;
 var player2;
 var PlayerHealth = 10;
@@ -14,13 +18,12 @@ var speed2 = 0;
 var horizontal2 = 0;
 var PlayerDmg = Math.floor(Math.random() * 6); // damage that player outputs
 var battle_music = document.getElementById("battle_music");
-var battle;
+//var main_x = document.getElementById("blueFight"), main_y = document.getElementById("blueFight"), move_x = 0 , move_y = 0;
+//var main_x2 =  document.getElementById("redFight"), main_y2 =  document.getElementById("redFight"), move_x2 = 0, move_y2 = 0;
+//maps global
 var main_x = document.getElementById("blueFight"), main_y = document.getElementById("blueFight"), move_x = 0 , move_y = 0;
 var main_x2 =  document.getElementById("redFight"), main_y2 =  document.getElementById("redFight"), move_x2 = 0, move_y2 = 0;
-//maps global
 var people = 4;
-var map;
-var movement = 3;
 var blueplay = document.getElementById("blueFight");
 var redplay = document.getElementById("redFight");
 var framerate = 25;
@@ -71,13 +74,6 @@ function keyPressBlue(e){
       
       document.getElementById("blueFight").style.transform = "rotate(90deg)";
            }
-         
-
-   //      speed = 1.5;
-     //   move_x = speed;
-       // document.getElementsByClassName("blueFight").style.backgroundImage = "url('BlueBoard.gif')";
-//     document.getElementsByClassName("blueFight").style.transform = "rotate(-90deg)";
-     
     
     if(e.keyCode == 65){
         speed = -1.5;
@@ -223,11 +219,6 @@ function moveBlue(){
              document.getElementById("blueFight").style.top = (y).toString() + "px";
              
          }
-      
-     
-            
-        
-  
     
    
 }
@@ -248,7 +239,7 @@ function moveRed(){
          main_x2 += 0;
      }else{
          document.getElementById("redFight").style.left = (x2).toString() + "px";
-    
+     }
      if(main_y2 >= 10 && horizontal2 > 0){
         main_y2 += 0;
       }
@@ -258,7 +249,6 @@ function moveRed(){
             document.getElementById("redFight").style.top = (y2).toString() + "px";
         }
    
-}
 }
 
  
@@ -293,23 +283,30 @@ resources.onReady(init);
 */
 function gameloop(){
     
-   // spawnplayer();
   //  draw();
-   moveBlue();
+  if(little === true){
+       moveBlue();
     moveRed();
+  }
+  
   
 }
 
 
 
 function init() {
-     setInterval(this.gameLoop,1000/100);
     
+     game = document.getElementById("land");
+     if (game && game.getContext) {
+    context = game.getContext('2d');
+    setInterval(this.gameLoop,1000/100);
+    window.canvas = document.getElementById("space");
+    window.ctx_1 = game.getContext("2d");
      window.addEventListener("keydown", keyPressBlue, false);
      window.addEventListener("keyup", keyReleaseBlue, false);
      window.addEventListener("keydown", keyPressRed, false);
      window.addEventListener("keyup", keyReleaseRed, false); 
-   
+     }
 }
 
 

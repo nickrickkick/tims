@@ -20,6 +20,7 @@ document.onreadystatechange = function() {
    
     but.item(0).onclick = function(){
             document.getElementById("canvas_wrap").style.backgroundImage = "url('images/BoardTIMS.png')";
+            little = true;
     this.style.zIndex = "2";
     document.getElementById("redPlayer").style.zIndex = "1";
     document.getElementById("bluePlayer").style.zIndex = "1";
